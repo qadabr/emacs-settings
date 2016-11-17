@@ -1,0 +1,1076 @@
+((("shor" .
+   [2 0 0 0])
+  ("unique_ptr" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("c-mode-common-hook" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("irony-mode" .
+   [1 0 0 0 0 0 0 1 0 0])
+  ("c++-mode" .
+   [0 0 0 1 0 0 0 0])
+  ("add-hook" .
+   [2 0 0 0 0 0 0 1])
+  ("fft" .
+   [1 0 0])
+  ("begin" .
+   [3 0 0 0 0])
+  ("end" .
+   [1 0 0])
+  ("filtered" .
+   [0 0 0 0 0 0 1 0])
+  ("data" .
+   [7 0 0 0])
+  ("signalFiltration" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("vector" .
+   [5 0 0 0 0 0])
+  ("complex" .
+   [1 0 0 0 0 0 0])
+  ("element" .
+   [1 0 0 0 0 0 0])
+  ("source" .
+   [7 0 0 0 0 0])
+  ("SpectrumType" .
+   [1 0 0 0 2 0 0 0 0 0 0 0])
+  ("Aquila" .
+   [1 0 0 1 1 0])
+  ("filterFreq" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("sqrt" .
+   [4 0 0 0])
+  ("Update" .
+   [3 0 0 0 0 0])
+  ("m_highpassFilter" .
+   [2 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("Butterworth" .
+   [0 0 0 0 2 0 0 0 0 0 0])
+  ("H_id" .
+   [4 0 0 0])
+  ("x" .
+   [4])
+  ("sizeIn" .
+   [3 0 0 0 0 0])
+  ("output" .
+   [14 0 0 0 0 0])
+  ("filterBlackman" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("input" .
+   [7 0 0 0 0])
+  ("x0" .
+   [10 0])
+  ("SL_SPEAKER_FRONT_RIGHT" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SL_SPEAKER_FRONT_LEFT" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("BUFFER_SIZE" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("SL_BOOLEAN_FALSE" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("EnqueueBuffer" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("Enqueue" .
+   [0 0 0 0 0 0 1])
+  ("m_recorderQueueInterface" .
+   [0 0 0 1 1 1 0 0 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("m_buffer0" .
+   [1 0 0 0 0 0 0 0 0])
+  ("m_buffer1" .
+   [1 0 0 0 0 0 0 0 0])
+  ("GetBuffer" .
+   [0 0 0 0 0 1 0 0 0])
+  ("m_circularBuffer" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("RECORD_BUFFERS" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("empty" .
+   [1 0 0 0 0])
+  ("unlock" .
+   [4 0 0 0 0 1])
+  ("lock" .
+   [6 0 0 0])
+  ("m_size" .
+   [1 0 0 0 0 0])
+  ("mutex" .
+   [1 0 1 0 0])
+  ("queue" .
+   [2 0 0 0 0])
+  ("CircularBuffer" .
+   [1 0 7 3 1 0 1 0 0 0 0 0 0 1])
+  ("mman" .
+   [1 0 0 0])
+  ("sys" .
+   [2 0 0])
+  ("frontBuffer" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("pop" .
+   [2 0 0])
+  ("front" .
+   [5 0 0 0 0])
+  ("push" .
+   [4 0 0 0])
+  ("m_queue" .
+   [1 0 0 5 7 0 0])
+  ("RECORDER_BUFFERS_COUNT" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("bitsInFrame" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("m_recorder" .
+   [5 0 0 0 3 1 1 0 0 6])
+  ("receive" .
+   [1 0 0 0 0 0 0])
+  ("frame" .
+   [0 0 0 1 0])
+  ("frameStep" .
+   [4 0 0 4 0 0 3 1 0])
+  ("MAX_FREQ" .
+   [0 0 1 0 0 0 0 0])
+  ("ZERO" .
+   [5 0 0 0])
+  ("MIN_FREQ" .
+   [0 0 0 3 1 0 0 0])
+  ("frameFrequency" .
+   [0 0 0 1 0 0 1 0 0 0 0 0 0 0])
+  ("FREQ_SIZE" .
+   [0 0 0 0 0 0 1 0 0])
+  ("abs" .
+   [7 0 0])
+  ("bits" .
+   [1 0 0 0])
+  ("hits" .
+   [18 0 0 1])
+  ("lastFreq" .
+   [0 0 0 3 0 1 0 0])
+  ("frequencyFilter" .
+   [0 0 0 1 0 1 0 0 0 0 0 0 0 0 1])
+  ("Frequency" .
+   [0 0 0 0 0 0 1 0 0])
+  ("markCounter" .
+   [2 0 0 2 2 0 0 0 0 0 0])
+  ("DequeueBuffer" .
+   [0 0 0 2 1 0 0 0 0 0 0 0 1])
+  ("GetSwapTime" .
+   [0 0 0 0 1 0 0 0 0 0 2])
+  ("ReceiveMessage" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 1])
+  ("fprintf" .
+   [3 0 1 0 0 1 0])
+  ("getBit" .
+   [0 0 0 0 0 1])
+  ("fopen" .
+   [3 0 0 0 0])
+  ("addByteToMessage" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("messageByte" .
+   [1 0 1 1 0 0 0 0 0 1 0])
+  ("isSending" .
+   [0 0 0 1 0 1 0 0 1])
+  ("isSeinging" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("step" .
+   [10 0 0 0])
+  ("fabs" .
+   [7 0 0 1])
+  ("st" .
+   [1 0])
+  ("m_maxFreq" .
+   [0 0 0 0 4 1 0 0 1])
+  ("m_minFreq" .
+   [5 0 0 1 3 8 0 0 2])
+  ("silver" .
+   [9 0 0 0 0 0])
+  ("m_engine" .
+   [0 0 0 1 0 0 0 0])
+  ("engine" .
+   [7 0 1 0 0 0])
+  ("SoundEngine" .
+   [1 0 0 1 0 0 2 1 0 0 0])
+  ("frameN" .
+   [12 0 0 1 0 2])
+  ("0x7" .
+   [5 0 0])
+  ("0x" .
+   [2 0])
+  ("0xf" .
+   [1 0 0])
+  ("LOG_I" .
+   [21 0 0 0 0])
+  ("nibble" .
+   [2 0 0 0 0 0])
+  ("SendMessage" .
+   [0 0 0 0 0 0 1 0 0 0 1])
+  ("SilverPush" .
+   [2 0 0 4 1 0 1 1 0 1])
+  ("readdir" .
+   [0 0 0 0 1 0 1])
+  ("с" .
+   [1])
+  ("testDirSize" .
+   [0 0 0 0 2 0 1 0 0 0 0])
+  ("test" .
+   [1 0 1 0])
+  ("exit" .
+   [3 0 0 0])
+  ("closedir" .
+   [1 0 0 0 1 0 0 2])
+  ("opendir" .
+   [1 0 0 0 0 0 0])
+  ("testDir" .
+   [2 0 0 0 6 1 0])
+  ("DIR" .
+   [1 0 0])
+  ("entriesCnt" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("entry" .
+   [1 0 0 0 0])
+  ("message" .
+   [8 0 3 0 2 0 6])
+  ("bzero" .
+   [1 0 0 0 0])
+  ("m_lock" .
+   [9 0 0 1 1 1])
+  ("is" .
+   [3 0])
+  ("m_connectionSocket" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1])
+  ("thread" .
+   [3 0 0 0 0 0])
+  ("sockaddr" .
+   [0 0 0 1 0 0 0 0])
+  ("Accept" .
+   [0 0 0 0 1 1])
+  ("m_isRunning" .
+   [0 0 0 0 4 0 0 0 0 0 0])
+  ("sockaddr_in" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("n" .
+   [2])
+  ("m_listenSocket" .
+   [0 0 0 0 3 0 0 0 0 0 0 0 0 0])
+  ("SERVER_PORT" .
+   [0 0 1 1 0 0 0 0 0 0 0])
+  ("AF_INET" .
+   [0 0 0 1 0 0 0])
+  ("servaddr" .
+   [1 0 0 2 1 1 0 2])
+  ("gIsCreated" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("Server" .
+   [3 0 0 1 1 0])
+  ("STORAGE_NAME" .
+   [0 0 1 0 0 0 0 0 0 0 0 0])
+  ("stat" .
+   [4 0 0 0])
+  ("b" .
+   [9])
+  ("f_bfree" .
+   [2 0 0 0 0 0 0])
+  ("f_blocks" .
+   [0 0 0 0 2 0 0 0])
+  ("buf" .
+   [5 0 0])
+  ("statfs" .
+   [2 0 0 0 0 0])
+  ("sectionsNum" .
+   [1 0 0 0 0 0 1 0 2 0 1])
+  ("all" .
+   [1 0 0])
+  ("count" .
+   [3 0 0 0 0])
+  ("str" .
+   [3 0 0])
+  ("dir" .
+   [5 0 0])
+  ("ANDROID_LOG_ERROR" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("LOG_E" .
+   [3 0 0 0 3])
+  ("ANDROID_LOG_DEBUG" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("__android_log_print" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("LOG_D" .
+   [12 0 0 0 0])
+  ("symbol" .
+   [6 0 0 0 0 0])
+  ("c_str" .
+   [5 0 0 1 0])
+  ("m_path" .
+   [2 0 0 0 1 0])
+  ("nullptr" .
+   [0 0 0 0 1 2 0])
+  ("m_handler" .
+   [1 0 0 1 0 0 0 0 0])
+  ("FileSystem" .
+   [0 0 0 0 2 0 0 0 0 0])
+  ("VN_NULL" .
+   [4 0 0 0 0 1 0])
+  ("ThreeElements" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("VnFree" .
+   [1 0 0 0 0 0])
+  ("handle" .
+   [1 0 0 0 0 0])
+  ("PTRACE_SINGLESTEP" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("pid_t" .
+   [1 0 0 0 0])
+  ("pid" .
+   [1 0 0])
+  ("perror" .
+   [1 0 0 0 0 0])
+  ("PTRACE_TRACEME" .
+   [1 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("counter" .
+   [1 0 0 0 1 0 0])
+  ("wait_val" .
+   [1 0 0 0 1 0 0 1])
+  ("wait" .
+   [2 0 0 0])
+  ("ptrace" .
+   [6 0 0 0 0 0])
+  ("std" .
+   [48 0 0])
+  ("vnListEntry_t" .
+   [3 0 0 1 0 0 0 0 0 0 0 0 2])
+  ("stdlib" .
+   [1 0 0 0 0 0])
+  ("const" .
+   [0 0 0 0 1])
+  ("vnChar" .
+   [0 0 0 0 1 0])
+  ("__FUNC__" .
+   [1 0 0 0 0 0 0 0])
+  ("funcName" .
+   [2 0 0 2 0 0 0 0])
+  ("VN_PRINTF" .
+   [1 0 0 0 2 2 0 0 2])
+  ("VNLOGGER_H" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("printf" .
+   [20 0 0 0 0 0])
+  ("VnTestFailed" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("condition" .
+   [1 0 0 0 0 0 0 1 0])
+  ("vnBoolean" .
+   [0 0 0 0 1 1 0 0 0])
+  ("RtLogPrintDbg" .
+   [1 0 0 0 1 0 0 1 0 0 0 0 0])
+  ("attemptsCounter" .
+   [2 0 1 0 2 0 0 0 1 0 0 0 0 0 0])
+  ("next_iteration" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("errorCounter" .
+   [3 0 0 0 0 0 0 0 1 0 0 0])
+  ("RtErrorToCoreError" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("next" .
+   [2 0 0 0])
+  ("uint32" .
+   [1 0 0 0 0 0])
+  ("puts" .
+   [1 0 0 0])
+  ("environ" .
+   [4 0 0 0 1 0 1])
+  ("stop" .
+   [2 0 0 0])
+  ("DeinitGps" .
+   [0 0 0 0 0 0 0 0 1])
+  ("InitGps" .
+   [0 0 0 0 0 0 3])
+  ("isSpliced" .
+   [0 0 0 1 0 0 0 0 0])
+  ("TRUE" .
+   [3 0 1 0])
+  ("FALSE" .
+   [2 0 0 0 0])
+  ("sizeof" .
+   [0 0 0 1 0 7])
+  ("newCallback" .
+   [0 0 1 0 0 0 0 0 0 0 0])
+  ("memcpy" .
+   [4 0 0 0 0 0])
+  ("g_OriginalLines" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("CALLBACK_MAX" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("E_UNSUCCESS" .
+   [0 0 0 1 1 0 0 0 0 0 0])
+  ("default" .
+   [0 0 0 0 1 0 1])
+  ("CREATE_THREAD_CALLBACK" .
+   [1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("RELEASE_WAKELOCK_CALLBACK" .
+   [1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ACQUIRE_WAKELOCK_CALLBACK" .
+   [1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SET_CAPABILITIES_CALLBACK" .
+   [1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("NMEA_CALLBACK" .
+   [1 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("SV_STATUS_CALLBACK" .
+   [1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("STATUS_CALLBACK" .
+   [1 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("LOCATION_CALLBACK" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("callbackType" .
+   [0 0 0 1 0 0 0 0 0 0 1 0])
+  ("oldCallback" .
+   [0 0 4 6 4 0 0 0 0 0 0])
+  ("switch" .
+   [0 0 0 0 1 1])
+  ("name" .
+   [3 0 0 0])
+  ("callback" .
+   [1 0 1 0 0 0 0 0])
+  ("callbacks" .
+   [0 0 0 1 2 0 0 0 2])
+  ("RegisterGpsCallbacks" .
+   [1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("capabilities" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("uint32_t" .
+   [1 0 0 0 2 0 0 0])
+  ("length" .
+   [2 0 1 0 0 0])
+  ("nmea" .
+   [1 0 0 0])
+  ("timestamp" .
+   [1 0 0 0 1 0 0 0 0])
+  ("GpsUtcTime" .
+   [2 0 0 0 0 2 0 0 0 0])
+  ("sv_info" .
+   [1 0 0 0 0 0 0])
+  ("GpsSvStatus" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("sv_status_callback" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("status" .
+   [1 0 0 0 0 0])
+  ("GpsStatus" .
+   [0 0 0 0 0 0 0 0 1])
+  ("location" .
+   [1 0 0 0 0 0 0 0])
+  ("GpsLocation" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("create_thread_callback" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("release_wakelock_callback" .
+   [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("acquire_wakelock_callback" .
+   [0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("set_capabilities_callback" .
+   [0 0 0 0 1 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("nmea_callback" .
+   [0 0 0 0 0 0 2 1 0 0 0 0 3])
+  ("status_callback" .
+   [1 0 0 0 0 0 0 0 1 0 1 0 0 0 1])
+  ("location_callback" .
+   [0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1])
+  ("g_Callbacks" .
+   [0 0 0 0 1 0 1 0 0 0 0])
+  ("GpsCallbacks" .
+   [1 0 0 0 1 2 0 0 0 0 0 1])
+  ("rtlib" .
+   [1 0 0 0 1])
+  ("pragma" .
+   [0 0 0 1 0 0])
+  ("GetCurrentWindowName" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("pclose" .
+   [0 0 0 1 0 0])
+  ("window" .
+   [4 0 0 1 0 2])
+  ("len" .
+   [1 0 0])
+  ("windowName" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("CMD_CALL_DUMPSYS" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("pipe" .
+   [5 0 0 0])
+  ("__cplusplus" .
+   [0 0 0 0 0 0 1 1 0 0 0])
+  ("ActivityCheckerInitialize" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ActivityCheckerDeinitialize" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SCREENLOGGER" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("NULL" .
+   [32 0 1 0])
+  ("public" .
+   [3 0 2 1 0 0])
+  ("bin" .
+   [1 0 0])
+  ("bind" .
+   [0 0 0 1])
+  ("define-key" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("global-map" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("kbd" .
+   [1 0 0])
+  ("goto-line" .
+   [0 0 0 0 0 0 0 1 0])
+  ("export" .
+   [0 0 0 0 0 1])
+  ("ANDROID_SDK" .
+   [0 0 0 0 0 0 0 0 0 0 2])
+  ("PATH:" .
+   [1 0 0 0 0])
+  ("ANDROID_NDK" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("include" .
+   [1 0 0 1 1 1 8])
+  ("return" .
+   [0 0 0 3 0 7])
+  ("JavaVM" .
+   [2 0 0 0 1 0])
+  ("JavaVMOption" .
+   [1 0 0 0 0 0 0 0 1 0 0 0])
+  ("opt" .
+   [4 0 0])
+  ("optionString" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("args" .
+   [9 0 0 0])
+  ("options" .
+   [1 0 0 0 0 0 0])
+  ("dlopen" .
+   [1 0 0 0 0 0])
+  ("RTLD_NOW" .
+   [0 0 0 0 0 1 0 0])
+  ("JNIEnv" .
+   [0 0 0 0 1 0])
+  ("JNI_CreateJavaVM" .
+   [0 0 0 0 0 1 0 2 0 0 0 0 0 0 0 0])
+  ("register" .
+   [0 0 0 0 0 1 0 0])
+  ("libandroid_runtime_dso" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("libdvm_dso" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("g_JavaVM" .
+   [1 0 1 0 1 0 0 0])
+  ("g_JNIEnv" .
+   [0 0 0 0 1 0 0 1])
+  ("jni" .
+   [1 0 0])
+  ("jint" .
+   [1 0 0 0])
+  ("g_javaVM" .
+   [0 0 1 0 0 0 0 0])
+  ("0x0f" .
+   [1 0 0 0])
+  ("package" .
+   [0 0 0 0 1 0 0])
+  ("int32" .
+   [8 0 0 0 0])
+  ("err" .
+   [17 0 0])
+  ("InitializeJNI" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("RT_ERROR" .
+   [0 0 0 1 1 0 0 1])
+  ("DeinitializeJNI" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("s" .
+   [47])
+  ("c" .
+   [13])
+  ("void" .
+   [0 0 0 1])
+  ("cleanup" .
+   [1 0 1 0 0 1 0])
+  ("g_GpsIface" .
+   [0 0 0 2 0 0 0 0 0 2])
+  ("cleanup_wrapper" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("DISABLE_CLEANUP" .
+   [2 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("sleep" .
+   [4 0 0 0 0])
+  ("events_deinit" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("EventsProcessorDeinit" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("d" .
+   [5])
+  ("g_display" .
+   [1 0 1 2 0 0 0 0 0])
+  ("RtGeneralAlloc" .
+   [0 0 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("g_sc" .
+   [10 0 0 0])
+  ("RtGeneralFree" .
+   [0 0 1 1 0 0 0 0 0 0 0 0 0])
+  ("evt" .
+   [1 0 0])
+  ("argument" .
+   [1 0 0 0 0 0 0 0])
+  ("boolean" .
+   [0 0 1 0 0 0 1])
+  ("ctx" .
+   [4 0 0])
+  ("firstLaunch" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("while" .
+   [0 0 0 0 1])
+  ("func" .
+   [6 0 0 0])
+  ("params" .
+   [1 0 0 0 0 0])
+  ("loadInfo" .
+   [1 0 0 0 0 0 0 0])
+  ("priv" .
+   [1 0 0 0])
+  ("log" .
+   [1 0 0])
+  ("INFECTOR" .
+   [2 0 0 0 0 0 0 0])
+  ("I" .
+   [1])
+  ("build" .
+   [2 0 0 0 0])
+  ("once" .
+   [7 0 0 0])
+  ("max" .
+   [2 0 0])
+  ("main" .
+   [9 0 0 0])
+  ("t" .
+   [17])
+  ("vnAuto" .
+   [0 0 0 1 0 0])
+  ("vnPointer" .
+   [1 0 0 0 7 0 0 0 0])
+  ("VnAllocate" .
+   [0 0 0 1 0 0 0 0 0 2])
+  ("vnSize" .
+   [1 0 0 2 1 1])
+  ("size" .
+   [19 0 0 0])
+  ("VN_CAST" .
+   [0 0 0 0 1 1 2])
+  ("malloc" .
+   [7 0 0 0 0 1])
+  ("number" .
+   [7 0 0 0 0 0])
+  ("VnReallocate" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("pointer" .
+   [3 0 0 0 1 0 0])
+  ("VN_TEST" .
+   [0 0 0 0 0 0 1])
+  ("vnInt32" .
+   [6 0 0 0 0 0 0])
+  ("Factorial" .
+   [1 0 3 3 0 0 0 0 0])
+  ("VN_EXPECT_EQ" .
+   [0 0 0 1 5 0 0 0 0 0 0 0])
+  ("value2" .
+   [1 0 0 0 0 0])
+  ("value1" .
+   [1 0 1 0 0 1])
+  ("testName" .
+   [1 0 0 0 0 0 0 0])
+  ("VN_TEST_RUN" .
+   [0 0 0 1 0 0 0 0 0 1 0])
+  ("SimpleTest" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("VN_DEFINE" .
+   [0 0 0 0 0 1 0 0 0])
+  ("type" .
+   [15 0 0 0])
+  ("class" .
+   [6 0 0 0 0])
+  ("VN_TEMPLATE" .
+   [1 0 0 0 1 0 0 0 0 0 2])
+  ("VN_LIST" .
+   [1 0 0 0 0 0 0])
+  ("VN_CLASS" .
+   [5 0 0 0 0 2 0 0])
+  ("vnListEntry" .
+   [6 0 0 0 0 0 0 0 0 0 0])
+  ("struct" .
+   [1 0 0 1 0 0])
+  ("h" .
+   [10])
+  ("vnList" .
+   [1 0 0 0 0 0])
+  ("isStopped" .
+   [1 0 0 0 0 0 0 0 0])
+  ("f" .
+   [17])
+  ("free_buf" .
+   [1 0 0 0 0 0 0 0])
+  ("__TIME__" .
+   [0 0 0 0 0 0 1 0])
+  ("path" .
+   [12 0 0 1])
+  ("strncmp" .
+   [1 0 0 0 0 0 0])
+  ("root" .
+   [3 0 0 0])
+  ("p" .
+   [2])
+  ("strcpy" .
+   [3 0 0 0 0 0])
+  ("RtLogPrintInf" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("strcat" .
+   [2 0 0 0 0 0])
+  ("RtGeneralAllocZero" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("argc" .
+   [1 0 0 0])
+  ("argv" .
+   [1 0 0 0])
+  ("FILE" .
+   [9 0 0 0])
+  ("file" .
+   [37 0 0 0])
+  ("Elf64_Phdr" .
+   [3 0 2 1 0 1 0 4 1 1])
+  ("segment" .
+   [12 0 0 0 0 0 0])
+  ("Elf64_Word" .
+   [1 0 0 0 0 0 0 1 1 0])
+  ("Elf64_Ehdr" .
+   [1 0 0 1 0 0 1 2 0 0])
+  ("header" .
+   [25 0 0 0 1 4])
+  ("ReadNextSegmentHeader" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("segmentHeader" .
+   [4 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("fseek" .
+   [2 0 1 1 1])
+  ("SEEK_SET" .
+   [1 0 1 0 3 0 1 0])
+  ("Elf64_Half" .
+   [1 0 0 0 0 0 0 3 0 0])
+  ("section" .
+   [13 0 0 0 0 0 0])
+  ("sectionHeader" .
+   [1 0 0 1 0 0 0 1 0 0 0 0 0])
+  ("R" .
+   [2])
+  ("ReadHeader" .
+   [0 0 0 1 0 0 0 0 0 1])
+  ("in" .
+   [2 0])
+  ("error" .
+   [0 0 1 2 3])
+  ("error_code" .
+   [1 0 1 0 0 0 0 3 3 3])
+  ("N" .
+   [1])
+  ("sectionHeaders" .
+   [2 0 0 0 0 0 0 0 0 3 0 0 0 0])
+  ("e_shnum" .
+   [3 0 1 2 1 0 4])
+  ("ReadNextSectionHeader" .
+   [0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ReadAllSectionHeaders" .
+   [0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("E_NULL_POINTER" .
+   [1 0 0 1 4 0 0 1 0 0 0 0 0 0])
+  ("ERROR" .
+   [1 0 0 0 0])
+  ("define" .
+   [0 0 0 0 0 1])
+  ("E_FILE_READ" .
+   [1 0 1 1 0 0 0 0 0 0 1])
+  ("NO_ERRORS" .
+   [0 0 2 4 0 0 0 0 0])
+  ("sectionHeaderCounter" .
+   [1 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("sectionCounter" .
+   [0 0 2 1 0 0 0 0 0 0 0 0 0 0])
+  ("allSectionHeaders" .
+   [0 0 1 5 0 0 0 0 0 0 0 0 0 0 0 0 3])
+  ("MODULE_INIT" .
+   [3 0 0 0 0 0 0 0 0 0 0])
+  ("__module_init" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ARGS" .
+   [2 0 0 0])
+  ("MODULE_EXIT" .
+   [1 0 1 0 0 0 0 0 0 0 0])
+  ("__module_exit" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("command" .
+   [1 0 0 0 2 0 2])
+  ("arguments" .
+   [0 0 0 2 0 0 0 0 0])
+  ("FindSymbol" .
+   [0 0 1 1 0 0 0 0 0 0])
+  ("ERRORS_H" .
+   [1 0 0 0 0 0 0 0])
+  ("Module" .
+   [2 0 0 1 0 1])
+  ("ExecuteCommand" .
+   [0 0 1 1 0 0 0 0 0 0 0 0 0 0])
+  ("result" .
+   [38 0 0 3 1 1])
+  ("private" .
+   [4 0 0 0 0 1 0])
+  ("m_api" .
+   [2 0 0 1 1])
+  ("api_command" .
+   [0 0 0 3 1 0 0 0 0 0 0])
+  ("m_apiSize" .
+   [2 0 0 3 0 0 0 0 2])
+  ("size_t" .
+   [34 0 0 0 0 0])
+  ("num" .
+   [4 0 0])
+  ("api" .
+   [1 0 0])
+  ("ptr_t" .
+   [1 0 0 0 0])
+  ("modHelloWorld" .
+   [1 0 0 0 2 0 0 0 0 0 0 0 1])
+  ("Start" .
+   [1 0 0 0 0])
+  ("Stop" .
+   [5 0 0 0])
+  ("LoadAPI" .
+   [1 0 0 0 0 0 0])
+  ("p_type" .
+   [2 0 0 0 0 0])
+  ("i" .
+   [24])
+  ("E" .
+   [3])
+  ("segmentCounter" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("sh_name" .
+   [3 0 0 0 0 0 0])
+  ("Elf32" .
+   [12 0 0 0 0])
+  ("word" .
+   [3 0 0 0])
+  ("Elf64_Sword" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("Elf64_Xword" .
+   [0 0 0 0 0 0 0 1 0 0 0])
+  ("Elf64_Sxword" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  ("Elf64_Addr" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("addr" .
+   [1 0 0 0])
+  ("off" .
+   [3 0 0])
+  ("Elf64_Section" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("Elf64_Ver" .
+   [0 0 0 0 0 0 0 0 1])
+  ("Elf64_Versym" .
+   [0 0 0 0 0 0 0 0 0 0 1 0])
+  ("Elf64_" .
+   [0 0 0 0 0 1])
+  ("SegmentHeader" .
+   [1 0 3 1 0 0 0 0 0 0 0 0 3])
+  ("ElfHeader" .
+   [0 0 0 1 3 0 0 0 0])
+  ("e_phoff" .
+   [1 0 0 0 0 0 1])
+  ("fread" .
+   [3 0 0 0 0])
+  ("half" .
+   [4 0 0 0])
+  ("F" .
+   [1])
+  ("p_offset" .
+   [0 0 0 0 0 0 0 1])
+  ("p_vaddr" .
+   [0 0 0 1 0 0 0])
+  ("p_paddr" .
+   [0 0 0 1 0 0 0])
+  ("p_filesz" .
+   [1 0 0 0 0 0 0 0])
+  ("p_flags" .
+   [1 0 0 0 0 0 0])
+  ("p_align" .
+   [1 0 0 0 0 0 0])
+  ("PrintSegmentHeader" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ReadSegmentHeader" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("seg_ind" .
+   [2 0 0 0 3 0 0])
+  ("e_phentsize" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("free" .
+   [3 0 0 0])
+  ("e_phnum" .
+   [1 0 0 0 0 0 0])
+  ("p_memsz" .
+   [1 0 0 0 0 0 0])
+  ("SectionHeader" .
+   [1 0 0 1 0 0 0 0 1 3 0 0 2])
+  ("o" .
+   [2])
+  ("e_shoff" .
+   [1 0 0 0 0 0 0])
+  ("PrintSectionHeader" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("offset" .
+   [5 0 0 1 0 0])
+  ("sh_type" .
+   [1 0 0 0 0 0 0])
+  ("sh_flags" .
+   [1 0 0 0 0 0 0 0])
+  ("sh_addr" .
+   [1 0 0 0 0 0 0])
+  ("sh_offset" .
+   [1 0 0 0 0 0 1 0 0])
+  ("sh_size" .
+   [2 0 0 0 2 0 0])
+  ("sh_link" .
+   [1 0 0 0 0 0 0])
+  ("sh_info" .
+   [1 0 0 0 0 0 0])
+  ("sh_addralign" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  ("sh_entsize" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("Section" .
+   [1 0 0 0 0 0 0])
+  ("ReadSectionHeader" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("e_shstrndx" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("str_section" .
+   [0 0 0 0 4 0 1 0 0 0 0])
+  ("index" .
+   [15 0 0 0 0])
+  ("S" .
+   [1])
+  ("sec" .
+   [1 0 0])
+  ("section_data" .
+   [2 0 0 3 0 0 0 0 0 1 0 0])
+  ("PrintSectionName" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("string" .
+   [5 0 0 0 0 0])
+  ("P" .
+   [1])
+  ("SonicRay" .
+   [0 0 2 0 1 1 0 0])
+  ("SLES" .
+   [0 0 2 0])
+  ("sampleRate" .
+   [0 0 1 1 0 0 0 0 0 0])
+  ("minFreq" .
+   [0 0 0 1 0 0 0])
+  ("maxFreq" .
+   [1 0 0 0 0 0 0])
+  ("OpenSLES_Android" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("freq" .
+   [45 0 1 0])
+  ("m_bufferQueue" .
+   [0 0 0 0 3 1 0 0 0 0 0 0 0])
+  ("buffer" .
+   [57 0 0 0 0 4])
+  ("bufferSize" .
+   [7 0 0 1 3 0 0 2 2 0])
+  ("SoundPlayer" .
+   [0 0 0 1 2 0 1 0 0 0 1])
+  ("player" .
+   [3 0 0 0 0 0])
+  ("PlayTone" .
+   [0 0 0 2 0 0 0 0])
+  ("prevPhase" .
+   [0 0 0 0 2 0 0 0 0])
+  ("sin" .
+   [3 0 0])
+  ("phase" .
+   [3 0 1 0 0])
+  ("M_PI" .
+   [3 0 0 0])
+  ("sample" .
+   [1 0 0 0 0 0])
+  ("generateSineWave" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("val" .
+   [4 0 0])
+  ("duration" .
+   [1 0 2 0 2 0 0 0])
+  ("usec" .
+   [2 0 0 0])
+  ("10e6" .
+   [5 0 0 0])
+  ("m_duration" .
+   [0 0 0 2 0 0 0 0 0 0])
+  ("SLresult" .
+   [1 0 0 0 0 0 0 0])
+  ("Clear" .
+   [1 0 0 1 0])
+  ("Record" .
+   [1 0 0 0 1 1])
+  ("SoundRecorder" .
+   [0 0 0 0 0 0 2 1 0 0 0 0 0])
+  ("recorder" .
+   [5 0 0 0 1 0 0 0])
+  ("GetBufferSize" .
+   [1 0 0 1 0 1 0 0 0 1 0 0 2])
+  ("int16_t" .
+   [16 0 0 0 0 2 0])
+  ("m_player" .
+   [5 0 0 1 2 0 0 1])
+  ("Play" .
+   [1 0 0 0])
+  ("m_isRecording" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0])
+  ("m_recorderInterface" .
+   [1 0 0 0 2 0 0 0 0 0 1 1 0 1 0 0 0 0 2])
+  ("SetRecordState" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("int64_t" .
+   [1 0 0 0 0 0 0])
+  ("m_outputMix" .
+   [0 0 0 0 2 0 0 0 0 0 0])
+  ("Destroy" .
+   [1 0 0 0 0 0 0])
+  ("SetDurationLimit" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("state" .
+   [7 0 0 0 0])
+  ("IsRecording" .
+   [0 0 1 0 0 0 0 0 0 0 0])
+  ("m_samplingRate" .
+   [0 0 0 3 0 0 0 0 0 0 0 0 0 0])
+  ("WavFile" .
+   [0 0 0 0 0 0 1])
+  ("pack" .
+   [1 0 0 0])
+  ("Size" .
+   [1 0 0 0])
+  ("largeBuffer" .
+   [1 0 1 3 0 0 0 0 0 0 0])
+  ("u" .
+   [1])
+  ("chunk" .
+   [5 0 0 0 0])
+  ("IsEmpty" .
+   [0 0 0 0 1 0 0])
+  ("chunkIndex" .
+   [1 0 0 0 0 0 0 1 0 0])
+  ("list" .
+   [1 0 0 0])
+  ("frequencySequence" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("copy" .
+   [1 0 0 0])
+  ("get" .
+   [8 0 0])
+  ("shared_ptr" .
+   [1 0 0 0 0 0 1 0 0 0])))

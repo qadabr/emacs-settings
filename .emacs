@@ -1,3 +1,6 @@
+;;(standard-display-ascii ?\r "¤")
+;;(standard-display-ascii ?\n "¬\n")
+
 ;; Назначение клавиш
 (define-key global-map (kbd "M-j") 'backward-char)
 (define-key global-map (kbd "M-l") 'forward-char)
@@ -49,6 +52,27 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-common-hook 'irony-mode)
+
+(defun my-irony-mode-hook ()
+  (define-key irony-mode-map [remap completion-at-point]
+    'irony-completion-at-point-async)
+  (define-key irony-mode-map [remap complete-symbol]
+    'irony-completion-at-point-async))
+(add-hook 'irony-mode-hook 'my-irony-mode-hook)
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+
 (custom-set-variables
- '(custom-enabled-themes (quote (wombat))))
-(custom-set-faces)
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (wombat)))
+ '(package-selected-packages (quote (irony yasnippet sublime-themes auto-complete))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:background nil)))))
