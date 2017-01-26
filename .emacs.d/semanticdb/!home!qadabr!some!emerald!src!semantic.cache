@@ -1,0 +1,266 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("EMTYPES_H" variable (:constant-flag t) nil [27 36])
+            ("stdint.h" include (:system-flag t) nil [38 57])
+            ("string.h" include (:system-flag t) nil [58 77])
+            ("emInt8" type
+               (:typedef ("int8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [79 109])
+            ("emInt16" type
+               (:typedef ("int16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [110 142])
+            ("emInt32" type
+               (:typedef ("int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [143 175])
+            ("emInt64" type
+               (:typedef ("int64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [176 208])
+            ("emUInt8" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [210 242])
+            ("emUInt16" type
+               (:typedef ("uint16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [243 276])
+            ("emUInt32" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [277 310])
+            ("emUInt64" type
+               (:typedef ("uint64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [311 344])
+            ("emSize" type
+               (:typedef ("size_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [346 377])
+            ("emPointer" type
+               (:typedef ("void")
+                :pointer 1
+                :type "typedef")
+                nil [378 412])
+            ("emChar" type
+               (:typedef ("emUInt8" type (:type "class") nil nil)
+                :type "typedef")
+                nil [413 444])
+            ("emBool" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [446 477])
+            ("true" variable (:constant-flag t) nil [487 491])
+            ("false" variable (:constant-flag t) nil [513 518])
+            ("and" variable (:constant-flag t) nil [540 543])
+            ("or" variable (:constant-flag t) nil [567 569])
+            ("not" variable (:constant-flag t) nil [594 597])
+            ("xor" variable (:constant-flag t) nil [620 623])
+            ("null" variable (:constant-flag t) nil [647 651])
+            ("zero_array" variable (:constant-flag t) nil [676 686])
+            ("emComparator" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("emPointer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [729 740])
+                    ("" variable
+                       (:pointer 1
+                        :type ("emPointer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [741 752]))                  
+                :type ("emInt32" type (:type "class") nil nil))
+                nil [705 753])
+            ("offsetof" variable (:constant-flag t) nil [839 847]))          
+      :file "emtypes.h"
+      :pointmax 923
+      :fsize 971
+      :lastmodtime '(22663 17284 443736 115000)
+      :unmatched-syntax '((TYPEDEF 697 . 704))
+      :lexical-table 
+        '(("false" . ((number "0" 529 . 530)))
+          ("offsetof" (spp-arg-list ("TYPE" "MEMBER") 847 . 861) . ((semantic-list "((emSize) &((TYPE *)0)->MEMBER)" 867 . 898)))
+          ("and" . ((punctuation "&" 556 . 557) (punctuation "&" 557 . 558)))
+          ("EMTYPES_H")
+          ("or" . ((punctuation "|" 583 . 584) (punctuation "|" 584 . 585)))
+          ("xor" . ((punctuation "^" 636 . 637)))
+          ("true" . ((number "1" 503 . 504)))
+          ("not" . ((punctuation "!" 610 . 611)))
+          ("null" . ((symbol "NULL" 663 . 667)))
+          ("zero_array" . ((semantic-list "{0}" 692 . 695)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("EMMEMORY_H" variable (:constant-flag t) nil [28 38])
+            ("emtypes.h" include nil nil [40 60])
+            ("stdlib.h" include (:system-flag t) nil [62 81])
+            ("EmMemoryAllocate" function
+               (:arguments 
+                  ( ("size" variable (:type ("emSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110 122]))                  
+                :type ("emPointer" type (:type "class") nil nil))
+                nil [83 151])
+            ("EmMemoryFree" function
+               (:arguments 
+                  ( ("pointer" variable (:type ("emPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [171 189]))                  
+                :type "void")
+                nil [153 212]))          
+      :file "emmemory.h"
+      :pointmax 246
+      :fsize 245
+      :lastmodtime '(22663 17284 443736 115000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EMMEMORY_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("EMTREE_H" variable (:constant-flag t) nil [27 35])
+            ("emtypes.h" include nil nil [37 57])
+            ("emmemory.h" include nil nil [58 79])
+            ("emTree" type
+               (:typedef ("_emTree" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [81 111])
+            ("_emTree" type
+               (:members 
+                  ( ("left" variable
+                       (:pointer 1
+                        :type ("emTree" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [131 145])
+                    ("right" variable
+                       (:pointer 1
+                        :type ("emTree" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [147 162])
+                    ("value" variable (:type ("emPointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [164 180]))                  
+                :type "struct")
+                nil [113 183])
+            ("EmTreeCreate" function
+               (:pointer 1
+                :arguments 
+                  ( ("left" variable
+                       (:pointer 1
+                        :type ("emTree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [206 219])
+                    ("right" variable
+                       (:pointer 1
+                        :type ("emTree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [220 234])
+                    ("value" variable (:type ("emPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [235 251]))                  
+                :type ("emTree" type (:type "class") nil nil))
+                nil [185 388])
+            ("EmTreeInsert" function
+               (:arguments 
+                  ( ("this" variable
+                       (:pointer 2
+                        :type ("emTree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [408 422])
+                    ("value" variable (:type ("emPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [423 439])
+                    ("cmp" variable (:type ("emComparator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [440 457]))                  
+                :type "void")
+                nil [390 750])
+            ("emTreeAction" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("EmTree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [781 789])
+                    ("args" variable (:type ("emPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [790 805]))                  
+                :type "void")
+                nil [760 806])
+            ("EmTreePrefixTraverse" function
+               (:arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("EmTree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [834 847])
+                    ("action" variable (:type ("emTreeAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [848 868])
+                    ("args" variable (:type ("emPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [869 884]))                  
+                :type "void")
+                nil [808 1065]))          
+      :file "emtree.h"
+      :pointmax 1089
+      :fsize 1088
+      :lastmodtime '(22665 41897 626679 862000)
+      :unmatched-syntax '((TYPEDEF 752 . 759) (TYPEDEF 752 . 759))
+      :lexical-table 
+        '(("EMTREE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("EMLIST_H" variable (:constant-flag t) nil [26 34])
+            ("emtypes.h" include nil nil [36 56])
+            ("emListEntry" type
+               (:typedef ("_emListEntry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [58 98])
+            ("_emListEntry" type
+               (:members 
+                  ( ("prev" variable
+                       (:pointer 1
+                        :type ("emListEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [123 141])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("emListEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [143 161])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("emPointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [163 186]))                  
+                :type "struct")
+                nil [100 189])
+            ("emList" type
+               (:typedef ("_emList" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [191 221])
+            ("_emList" type
+               (:members 
+                  ( ("head" variable
+                       (:pointer 1
+                        :type ("emListEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [241 259])
+                    ("tail" variable
+                       (:pointer 1
+                        :type ("emListEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [261 279])
+                    ("size" variable (:type ("emSize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [281 295]))                  
+                :type "struct")
+                nil [223 298]))          
+      :file "emlist.h"
+      :pointmax 322
+      :fsize 321
+      :lastmodtime '(22664 50466 162872 758000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EMLIST_H")
+          )
+))
+  :file "!home!qadabr!some!emerald!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
