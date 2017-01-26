@@ -1,0 +1,122 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/kernel.h" include (:system-flag t) nil [1 26])
+            ("linux/module.h" include (:system-flag t) nil [27 52])
+            ("linux/sched.h" include (:system-flag t) nil [53 77])
+            ("linux/fs.h" include (:system-flag t) nil [78 99])
+            ("linux/miscdevice.h" include (:system-flag t) nil [100 129])
+            ("rtlib/rtlib.h" include (:system-flag t) nil [131 155])
+            ("rknet/rknetlib.h" include (:system-flag t) nil [156 183])
+            ("SERVER_PORT" variable (:constant-flag t) nil [193 204])
+            ("g_IsServerRunning" variable
+               (:typemodifiers ("static")
+                :type ("RtAtomic32" type (:type "class") nil nil))
+                nil [217 262])
+            ("g_Logger" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("RtLogger" type (:type "class") nil nil))
+                nil [263 299])
+            ("g_ServerThread" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("RtThread" type (:type "class") nil nil))
+                nil [300 342])
+            ("g_ServerSock" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("RkSock" type (:type "class") nil nil))
+                nil [343 383])
+            ("g_ClientSock" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("RkSock" type (:type "class") nil nil))
+                nil [384 424])
+            ("ReceiveMessage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [454 469]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [426 1300])
+            ("SendMessage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("message" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1327 1341])
+                    ("messageLength" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1342 1363]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [1302 1502])
+            ("ServerThread" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("RtThread" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1530 1545])
+                    ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1546 1557]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [1504 2398])
+            ("StartServer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2423 2428]))                  
+                :type "int")
+                nil [2400 3899])
+            ("StopServer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3924 3929]))                  
+                :type "void")
+                nil [3901 4174])
+            ("TcpipServerInit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4210 4215]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [4187 4419])
+            ("TcpipServerExit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4456 4461]))                  
+                :type ("__exit" type (:type "class") nil nil))
+                nil [4433 4517])
+            ("module_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TcpipServerInit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4531 4547]))                  
+                :type "int")
+                nil [4519 4548])
+            ("module_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TcpipServerExit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4561 4577]))                  
+                :type "int")
+                nil [4549 4578])
+            ("MODULE_LICENSE" function
+               (:prototype-flag t
+                :type "int")
+                nil [4579 4601]))          
+      :file "tcpip-server.c"
+      :pointmax 4602
+      :fsize 4601
+      :lastmodtime '(22664 32297 749597 262000)
+      :unmatched-syntax '((string 4594 . 4599) (VOID 4428 . 4432) (STATIC 4421 . 4427) (INT 4183 . 4186) (STATIC 4176 . 4182))
+      :lexical-table 
+        '(("SERVER_PORT" . ((number "888" 212 . 215)))
+          )
+))
+  :file "!home!qadabr!work!agent!tests!tcpip!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,158 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("RKNETLIB" variable (:constant-flag t) nil [99 107])
+            ("RKNETLIB_TCPIP" variable (:constant-flag t) nil [116 130])
+            ("RKNETLIB_TCPIP_TCP_IN" variable (:constant-flag t) nil [139 160])
+            ("rtlib/rtlib.h" include (:system-flag t) nil [162 186])
+            ("rknet/rknetlib.h" include (:system-flag t) nil [187 214])
+            ("rknet/tcpip/tcpip.h" include (:system-flag t) nil [215 245])
+            ("g_inseg" variable
+               (:typemodifiers ("static")
+                :type ("TcpSeg" type (:type "class") nil nil))
+                nil [411 434])
+            ("g_tcpHdr" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("TcpHdr" type (:type "class") nil nil))
+                nil [435 466])
+            ("g_ipHdr" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("IpHdr" type (:type "class") nil nil))
+                nil [467 497])
+            ("g_seqno" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint32" type (:type "class") nil nil))
+                nil [498 525])
+            ("g_ackno" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint32" type (:type "class") nil nil))
+                nil [526 553])
+            ("g_flags" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint8" type (:type "class") nil nil))
+                nil [554 581])
+            ("g_tcpLen" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint16" type (:type "class") nil nil))
+                nil [582 610])
+            ("g_recvFalgs" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint8" type (:type "class") nil nil))
+                nil [611 642])
+            ("g_recvData" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("Pbuf" type (:type "class") nil nil))
+                nil [643 676])
+            ("g_dstAddr" variable
+               (:typemodifiers ("static")
+                :type ("IpAddr" type (:type "class") nil nil))
+                nil [677 702])
+            ("g_srcAddr" variable
+               (:typemodifiers ("static")
+                :type ("IpAddr" type (:type "class") nil nil))
+                nil [703 728])
+            ("g_tcpInputPcb" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("TcpPcb" type (:type "class") nil nil))
+                nil [730 759])
+            ("TcpParseOpt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pcb" variable
+                       (:pointer 1
+                        :type ("TcpPcb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [785 797]))                  
+                :type "void")
+                nil [761 1714])
+            ("TcpTimewaitInput" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pcb" variable
+                       (:pointer 1
+                        :type ("TcpPcb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1746 1758]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [1716 2415])
+            ("TcpListenInput" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pcb" variable
+                       (:pointer 1
+                        :type ("TcpPcbListen" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2445 2463]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [2417 3651])
+            ("TcpOosInsertSegment" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cseg" variable
+                       (:pointer 1
+                        :type ("TcpSeg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3685 3698])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("TcpSeg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3699 3712]))                  
+                :type "void")
+                nil [3653 4349])
+            ("TcpReceive" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pcb" variable
+                       (:pointer 1
+                        :type ("TcpPcb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4375 4387]))                  
+                :type "void")
+                nil [4351 17127])
+            ("TcpProcess" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pcb" variable
+                       (:pointer 1
+                        :type ("TcpPcb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17153 17165]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [17129 23601])
+            ("TcpInput" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Pbuf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23617 23625])
+                    ("dev" variable
+                       (:pointer 1
+                        :type ("RknetDev" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23626 23640]))                  
+                :type "void")
+                nil [23603 30700]))          
+      :file "tcp_in.c"
+      :pointmax 30701
+      :fsize 34098
+      :lastmodtime '(22664 45659 204281 875000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RKNETLIB_TCPIP")
+          ("RKNETLIB")
+          ("RKNETLIB_TCPIP_TCP_IN")
+          )
+))
+  :file "!home!qadabr!work!agent!src!core!rknet!tcpip!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,225 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__RTLLOGGER_H__" variable (:constant-flag t) nil [102 117])
+            ("rtlib/rtlib.h" include (:system-flag t) nil [119 143])
+            ("LOG_FILE" variable (:constant-flag t) nil [432 440])
+            ("LOG_LVL_DISABLE" variable (:constant-flag t) nil [466 481])
+            ("LOG_LVL_ERROR" variable (:constant-flag t) nil [498 511])
+            ("LOG_LVL_WARN" variable (:constant-flag t) nil [529 541])
+            ("LOG_LVL_INFO" variable (:constant-flag t) nil [560 572])
+            ("LOG_LVL_DEBUG" variable (:constant-flag t) nil [591 604])
+            ("LOG_LVL_VERB" variable (:constant-flag t) nil [622 634])
+            ("LOG_LVL_NONE" variable (:constant-flag t) nil [653 665])
+            ("LOG_TYPE_STDOUT" variable (:constant-flag t) nil [684 699])
+            ("LOG_TYPE_TOFILE" variable (:constant-flag t) nil [710 725])
+            ("_RtLogSettingsType" type
+               (:members 
+                  ( ("RTLOG_CONF_NAME" variable
+                       (:constant-flag t
+                        :default-value (861 862)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [843 862])
+                    ("RTLOG_CONF_LVL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [897 912])
+                    ("RTLOG_CONF_FOLDER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [947 965])
+                    ("RTLOG_CONF_TYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1009 1025])
+                    ("RTLOG_CONF_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1051 1067]))                  
+                :type "enum")
+                nil [809 1086])
+            ("RtLogSettingsType" type
+               (:typedef ("_RtLogSettingsType" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [809 1086])
+            ("_LoggerOut" type
+               (:members 
+                  ( ("type" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1200 1212])
+                    ("folderPath" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1275 1293])
+                    ("fileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1341 1357]))                  
+                :type "struct")
+                nil [1171 1432])
+            ("RtLoggerOut" type
+               (:typedef ("_LoggerOut" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1171 1432])
+            ("RtLogger" type
+               (:typedef ("_RtLogger" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1434 1468])
+            ("_RtLoggerIfaces" type
+               (:members 
+                  ( ("rtLoggerSetSettings" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("log" variable
+                               (:pointer 1
+                                :type ("RtLogger" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1533 1547])
+                            ("tuneName" variable (:type ("RtLogSettingsType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1578 1605])
+                            ("tune" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1636 1647])
+                            ("tuneLen" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1678 1693]))                          
+                        :type ("int32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1504 1694])
+                    ("rtLoggerGetSettings" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("log" variable
+                               (:pointer 1
+                                :type ("RtLogger" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1727 1741])
+                            ("tuneName" variable (:type ("RtLogSettingsType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1772 1799])
+                            ("tune" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1830 1841])
+                            ("tuneLen" variable
+                               (:pointer 1
+                                :type ("uint32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1872 1888]))                          
+                        :type ("int32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1698 1889])
+                    ("rtLoggerPrint" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("log" variable
+                               (:pointer 1
+                                :type ("RtLogger" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1915 1929])
+                            ("lvl" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1953 1964])
+                            ("file" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1988 2005])
+                            ("line" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2029 2040])
+                            ("func" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2064 2081])
+                            ("fmt" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2105 2121])
+                            ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2122 2126]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1893 2127]))                  
+                :type "struct")
+                nil [1470 2145])
+            ("RtLoggerIfaces" type
+               (:typedef ("_RtLoggerIfaces" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1470 2145])
+            ("_RtLogger" type
+               (:members 
+                  ( ("vtable" variable
+                       (:pointer 1
+                        :type ("RtLoggerIfaces" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2167 2190])
+                    ("priv" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2192 2204]))                  
+                :type "struct")
+                nil [2147 2207])
+            ("RtLoggersInit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2229 2239]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [2209 2240])
+            ("RtLoggersDeinit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2262 2267]))                  
+                :type "void")
+                nil [2241 2268])
+            ("RtLogCreate" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("lvl" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2292 2303])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("RtLoggerOut" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2304 2321]))                  
+                :type ("RtLogger" type (:type "class") nil nil))
+                nil [2270 2322])
+            ("RtLogSetSettings" variable (:constant-flag t) nil [2507 2523])
+            ("RtLogGetSettings" variable (:constant-flag t) nil [2769 2785])
+            ("RtLogPrintErr" variable (:constant-flag t) nil [3266 3279])
+            ("RtLogPrintWrn" variable (:constant-flag t) nil [3743 3756])
+            ("RtLogPrintInf" variable (:constant-flag t) nil [4220 4233])
+            ("RtLogPrintDbg" variable (:constant-flag t) nil [4697 4710])
+            ("RtLogPrintVrb" variable (:constant-flag t) nil [5174 5187]))          
+      :file "rtllogger.h"
+      :pointmax 5260
+      :fsize 5483
+      :lastmodtime '(22652 44347 409441 132000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RtLogPrintInf" (spp-arg-list ("_self" "_fmt" "...") 4233 . 4251) . 
+              ((DO "do" 4252 . 4254) (semantic-list "{}" 4255 . 4257) (WHILE "while" 4258 . 4263) (semantic-list "(0)" 4264 . 4267)))
+          ("LOG_LVL_DEBUG" . ((number "20" 611 . 613)))
+          ("LOG_TYPE_TOFILE" . ((number "2" 726 . 727)))
+          ("RtLogPrintErr" (spp-arg-list ("_self" "_fmt" "...") 3279 . 3297) . 
+              ((DO "do" 3298 . 3300) (semantic-list "{}" 3301 . 3303) (WHILE "while" 3304 . 3309) (semantic-list "(0)" 3310 . 3313)))
+          ("__RTLLOGGER_H__")
+          ("LOG_LVL_VERB" . ((number "10" 642 . 644)))
+          ("LOG_LVL_DISABLE" . ((number "100" 486 . 489)))
+          ("RtLogPrintWrn" (spp-arg-list ("_self" "_fmt" "...") 3756 . 3774) . 
+              ((DO "do" 3775 . 3777) (semantic-list "{}" 3778 . 3780) (WHILE "while" 3781 . 3786) (semantic-list "(0)" 3787 . 3790)))
+          ("RtLogSetSettings" (spp-arg-list ("_self" "_tuneName" "_tune" "_tuneLen") 2523 . 2558) . 
+              ((DO "do" 2559 . 2561) (semantic-list "{}" 2562 . 2564) (WHILE "while" 2565 . 2570) (semantic-list "(0)" 2571 . 2574)))
+          ("LOG_LVL_WARN" . ((number "40" 549 . 551)))
+          ("LOG_FILE" . ((symbol "__FILE__" 441 . 449)))
+          ("RtLogGetSettings" (spp-arg-list ("_self" "_tuneName" "_tune" "_tuneLen") 2785 . 2820) . 
+              ((DO "do" 2821 . 2823) (semantic-list "{}" 2824 . 2826) (WHILE "while" 2827 . 2832) (semantic-list "(0)" 2833 . 2836)))
+          ("LOG_LVL_INFO" . ((number "30" 580 . 582)))
+          ("RtLogPrintVrb" (spp-arg-list ("_self" "_fmt" "...") 5187 . 5205) . 
+              ((DO "do" 5206 . 5208) (semantic-list "{}" 5209 . 5211) (WHILE "while" 5212 . 5217) (semantic-list "(0)" 5218 . 5221)))
+          ("LOG_LVL_NONE" . ((number "0" 673 . 674)))
+          ("LOG_TYPE_STDOUT" . ((number "1" 700 . 701)))
+          ("LOG_LVL_ERROR" . ((number "50" 518 . 520)))
+          ("RtLogPrintDbg" (spp-arg-list ("_self" "_fmt" "...") 4710 . 4728) . 
+              ((DO "do" 4729 . 4731) (semantic-list "{}" 4732 . 4734) (WHILE "while" 4735 . 4740) (semantic-list "(0)" 4741 . 4744)))
+          )
+))
+  :file "!home!qadabr!work!agent!src!infector!loader!rtlib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

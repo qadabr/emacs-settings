@@ -1,0 +1,99 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :file "jpeglib.h"
+      :fsize 25917
+      :lastmodtime '(22652 44347 861442 398000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("rtlib/rtlib.h" include (:system-flag t) nil [810 834])
+            ("rtlib/rtlib.h" include (:system-flag t) nil [836 860])
+            ("jinclude.h" include nil nil [863 884])
+            ("jpeglib.h" include nil nil [885 905])
+            ("jerror.h" include nil nil [906 925])
+            ("OUTPUT_BUF_SIZE" variable (:constant-flag t) nil [934 949])
+            ("my_mem_destination_mgr" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("pub" variable (:type ("jpeg_destination_mgr" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [1078 1110])
+                          ("outbuffer" variable
+                             (:pointer 2
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [1134 1161])
+                          ("outsize" variable
+                             (:pointer 1
+                              :type "unsigned long")
+                              (reparse-symbol classsubparts) [1184 1208])
+                          ("newbuffer" variable
+                             (:pointer 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [1211 1237])
+                          ("buffer" variable
+                             (:pointer 1
+                              :type ("JOCTET" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1269 1285])
+                          ("bufsize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1311 1326]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1059 1352])
+            ("my_mem_dest_ptr" type
+               (:typedef ("my_mem_destination_mgr" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [1354 1403])
+            ("init_mem_destination" function
+               (:arguments 
+                  ( ("cinfo" variable (:type ("j_compress_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1443 1464]))                  
+                :type "int")
+                nil [1421 1499])
+            ("empty_mem_output_buffer" function
+               (:arguments 
+                  ( ("cinfo" variable (:type ("j_compress_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1546 1567]))                  
+                :type "int")
+                nil [1521 2223])
+            ("term_mem_destination" function
+               (:arguments 
+                  ( ("cinfo" variable (:type ("j_compress_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2264 2285]))                  
+                :type "int")
+                nil [2242 2457])
+            ("jpeg_mem_dest" function
+               (:arguments 
+                  ( ("cinfo" variable (:type ("j_compress_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2972 2993])
+                    ("outbuffer" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3002 3029])
+                    ("outsize" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [3030 3054]))                  
+                :type "int")
+                nil [2957 4283]))          
+      :file "jdatadst.c"
+      :pointmax 4312
+      :fsize 4311
+      :lastmodtime '(22652 44347 857442 387000)
+      :unmatched-syntax '((close-paren 4304 . 4305) (semantic-list 2950 . 2956) (symbol 2944 . 2950) (semantic-list 2235 . 2241) (symbol 2226 . 2235) (semantic-list 1511 . 1520) (symbol 1502 . 1511) (semantic-list 1414 . 1420) (symbol 1405 . 1414))
+      :lexical-table 
+        '(("OUTPUT_BUF_SIZE" . ((number "4096" 951 . 955)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "jinclude.h"
+      :fsize 738
+      :lastmodtime '(22652 44347 861442 398000))
+    (semanticdb-table "semanticdb-table"
+      :file "jerror.h"
+      :fsize 7033
+      :lastmodtime '(22652 44347 857442 387000)))
+  :file "!home!qadabr!work!agent!src!screenlogger!libjpeg!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

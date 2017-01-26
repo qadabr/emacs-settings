@@ -47,11 +47,6 @@
 (setq c-default-style "linux"
       c-basic-offset 8)
 
-;; Выделение функций
-(font-lock-add-keywords
- 'c-mode
- '(("\\<\\(\\sw+\\) ?(" 1 'font-lock-function-name-face)))
-
 ;; ggtags для быстрого перехода по символам в проекте
 (require 'ggtags)
 (add-hook 'c-mode-common-hook
@@ -84,6 +79,14 @@
 (define-key c-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
 (define-key c++-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
 
+;; Подсветка
+(require 'semantic/bovine/c nil 'noerror)
+(load-file "~/.emacs.d/region-list-edit.el")
+(load-file "~/.emacs.d/zjl-hl.el")
+(zjl-hl-enable-global 'c-mode)
+(zjl-hl-enable-global 'c++-mode)
+(zjl-hl-enable-global 'java-mode)
+
 ;; Сниппеты
 (require 'yasnippet)
 (yas-global-mode 1)
@@ -96,14 +99,10 @@
  '(custom-enabled-themes (quote (monokai)))
  '(custom-safe-themes
    (quote
-    ("c7a9a68bd07e38620a5508fef62ec079d274475c8f92d75ed0c33c45fbe306bc"
-     "b9b1a8d2ec1d5c17700e1a09256f33c2520b26f49980ed9e217e444c381279a9"
-     "12b7ed9b0e990f6d41827c343467d2a6c464094cbcc6d0844df32837b50655f9"
-     "83faf27892c7119f6016e3609f346d3dae3516dede8fd8a5940373d98f615b4e"
-     "d606ac41cdd7054841941455c0151c54f8bff7e4e050255dbd4ae4d60ab640c1" default)))
+    ("c7a9a68bd07e38620a5508fef62ec079d274475c8f92d75ed0c33c45fbe306bc" "b9b1a8d2ec1d5c17700e1a09256f33c2520b26f49980ed9e217e444c381279a9" "12b7ed9b0e990f6d41827c343467d2a6c464094cbcc6d0844df32837b50655f9" "83faf27892c7119f6016e3609f346d3dae3516dede8fd8a5940373d98f615b4e" "d606ac41cdd7054841941455c0151c54f8bff7e4e050255dbd4ae4d60ab640c1" default)))
  '(package-selected-packages
    (quote
-    (monokai-theme suscolors-theme meacupla-theme labburn-theme foggy-night-theme yasnippet srefactor ggtags company-irony company-c-headers)))
+    (highlight monokai-theme suscolors-theme meacupla-theme labburn-theme foggy-night-theme yasnippet srefactor ggtags company-irony company-c-headers)))
  '(rainbow-identifiers-choose-face-function (quote rainbow-identifiers-cie-l*a*b*-choose-face) t)
  '(rainbow-identifiers-cie-l*a*b*-color-count 1024 t)
  '(rainbow-identifiers-cie-l*a*b*-lightness 80 t)
