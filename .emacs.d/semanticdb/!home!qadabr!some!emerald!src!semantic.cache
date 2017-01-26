@@ -198,8 +198,8 @@
       :file "emtree.h"
       :pointmax 1089
       :fsize 1088
-      :lastmodtime '(22665 41897 626679 862000)
-      :unmatched-syntax '((TYPEDEF 752 . 759) (TYPEDEF 752 . 759))
+      :lastmodtime '(22666 3566 600899 866000)
+      :unmatched-syntax nil
       :lexical-table 
         '(("EMTREE_H")
           )

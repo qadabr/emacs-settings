@@ -1,0 +1,258 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CUR_MODULE_NAME" variable (:constant-flag t) nil [103 118])
+            ("rtlib/rtlib.h" include (:system-flag t) nil [128 152])
+            ("rknet/rknetlib.h" include (:system-flag t) nil [153 180])
+            ("rknet/rknetifaces.h" include (:system-flag t) nil [181 211])
+            ("CallIfNotNULLWithErr" variable (:constant-flag t) nil [221 241])
+            ("CallIfNotNULL" variable (:constant-flag t) nil [366 379])
+            ("g_curIfaces" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("RknetIfaces" type (:type "class") nil nil))
+                nil [464 504])
+            ("g_logger" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("RtLogger" type (:type "class") nil nil))
+                nil [505 542])
+            ("g_socketType" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("RtObjectType" type (:type "class") nil nil))
+                nil [543 584])
+            ("RknetLoggerGet" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [611 616]))                  
+                :type ("RtLogger" type (:type "class") nil nil))
+                nil [586 638])
+            ("RkSockCreate" function
+               (:pointer 1
+                :arguments 
+                  ( ("domain" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [661 674])
+                    ("type" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [675 686])
+                    ("proto" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [687 699]))                  
+                :type ("RkSock" type (:type "class") nil nil))
+                nil [640 1084])
+            ("RknetInit" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1103 1113]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [1087 2460])
+            ("RknetDeinit" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2479 2489]))                  
+                :type "void")
+                nil [2462 2855]))          
+      :file "rknetlib.c"
+      :pointmax 2856
+      :fsize 3090
+      :lastmodtime '(22666 2187 668905 193000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CUR_MODULE_NAME" . ((string "\"Rknet\"" 119 . 126)))
+          ("CallIfNotNULL" (spp-arg-list ("_func" "_ctx") 379 . 392) . 
+              ((IF "if" 399 . 401) (semantic-list "(_func != NULL)" 402 . 417) (semantic-list "{     \\
+        _func(_ctx);         \\
+    }" 418 . 462)))
+          ("CallIfNotNULLWithErr" (spp-arg-list ("_func" "_ctx" "_err") 241 . 260) . 
+              ((IF "if" 267 . 269) (semantic-list "(_func != NULL)" 270 . 285) (semantic-list "{                  \\
+        _err = _func(_ctx);               \\
+    }" 286 . 356)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__PACKETFILTER_H__" variable (:constant-flag t) nil [36 54])
+            ("_TrafficDirection" type
+               (:members 
+                  ( ("DirOutbound" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [90 102])
+                    ("DirInbound" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [104 115])
+                    ("DirMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [117 125]))                  
+                :type "enum")
+                nil [56 143])
+            ("TrafficDirection" type
+               (:typedef ("_TrafficDirection" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [56 143])
+            ("PacketFilterCb" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("pktData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [176 190])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [191 203])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [204 214]))                  
+                :type "void")
+                nil [153 215])
+            ("PacketFilterInit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [240 245]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [217 246])
+            ("PacketFilterDeinit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [271 276]))                  
+                :type "void")
+                nil [247 277])
+            ("PacketFilterRegister" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cb" variable (:type ("PacketFilterCb" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [306 324])
+                    ("dir" variable (:type ("TrafficDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [325 346])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [347 357]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [279 358])
+            ("PacketFilterDeregister" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cb" variable (:type ("PacketFilterCb" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [387 405])
+                    ("dir" variable (:type ("TrafficDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [406 427]))                  
+                :type "void")
+                nil [359 428])
+            ("PacketFilterProcessPkt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [458 466])
+                    ("totalLen" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [467 483])
+                    ("dir" variable (:type ("TrafficDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [484 505]))                  
+                :type "void")
+                nil [430 506])
+            ("PacketFiltersCount" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [533 538]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [508 539]))          
+      :file "packetfilter.h"
+      :pointmax 573
+      :fsize 572
+      :lastmodtime '(22652 44347 397441 98000)
+      :unmatched-syntax '((TYPEDEF 145 . 152) (symbol 126 . 142) (close-paren 124 . 125) (symbol 117 . 123) (punctuation 114 . 115) (symbol 104 . 114) (punctuation 101 . 102) (symbol 90 . 101) (symbol 126 . 142) (close-paren 124 . 125) (symbol 117 . 123) (punctuation 114 . 115) (symbol 104 . 114) (punctuation 101 . 102) (symbol 90 . 101))
+      :lexical-table 
+        '(("__PACKETFILTER_H__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("rtlib/rtlib.h" include (:system-flag t) nil [1 25])
+            ("rknet/rknetlib.h" include (:system-flag t) nil [26 53])
+            ("rknet/tcpip/tcpip.h" include (:system-flag t) nil [54 84])
+            ("packetfilter.h" include nil nil [86 111])
+            ("_PacketFilterCbBlock" type
+               (:members 
+                  ( ("link" variable (:type ("RtListEntry" type (:type "class") nil nil)) (reparse-symbol classsubparts) [152 174])
+                    ("cb" variable (:type ("PacketFilterCb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [176 196])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [198 219])
+                    ("dir" variable (:type ("TrafficDirection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [221 242]))                  
+                :type "struct")
+                nil [113 265])
+            ("PacketFilterCbBlock" type
+               (:typedef ("_PacketFilterCbBlock" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [113 265])
+            ("g_cbs" variable
+               (:typemodifiers ("static")
+                :type ("RtListHead" type (:type "class") nil nil))
+                nil [267 291])
+            ("g_lock" variable
+               (:typemodifiers ("static")
+                :type ("RtLock" type (:type "class") nil nil))
+                nil [292 317])
+            ("g_packetFiltersCount" variable
+               (:typemodifiers ("static")
+                :default-value "{ 0 }"
+                :type ("RtAtomic32" type (:type "class") nil nil))
+                nil [318 365])
+            ("PacketFiltersCount" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [392 397]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [367 446])
+            ("PacketFilterProcessPkt" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [476 484])
+                    ("totalLen" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [485 501])
+                    ("dir" variable (:type ("TrafficDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [502 523]))                  
+                :type "void")
+                nil [448 800])
+            ("PacketFilterRegister" function
+               (:arguments 
+                  ( ("cb" variable (:type ("PacketFilterCb" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [829 847])
+                    ("dir" variable (:type ("TrafficDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [848 869])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [870 880]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [802 1212])
+            ("PacketFilterDeregister" function
+               (:arguments 
+                  ( ("cb" variable (:type ("PacketFilterCb" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1242 1260])
+                    ("dir" variable (:type ("TrafficDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1261 1282]))                  
+                :type "void")
+                nil [1214 1780])
+            ("PacketFilterInit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1805 1810]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [1782 1923])
+            ("PacketFilterDeinit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1949 1954]))                  
+                :type "void")
+                nil [1925 2043]))          
+      :file "packetfilter.c"
+      :pointmax 2044
+      :fsize 2043
+      :lastmodtime '(22665 59165 499693 428000)
+      :unmatched-syntax '((symbol 245 . 264) (close-paren 243 . 244) (symbol 245 . 264) (close-paren 243 . 244) (number 361 . 362) (number 361 . 362) (punctuation 443 . 444) (semantic-list 420 . 443) (symbol 408 . 420) (RETURN 401 . 407) (punctuation 443 . 444) (close-paren 442 . 443) (symbol 422 . 442) (punctuation 421 . 422) (open-paren 420 . 421) (symbol 408 . 420) (RETURN 401 . 407) (punctuation 797 . 798) (semantic-list 779 . 797) (symbol 766 . 779) (semantic-list 608 . 764) (semantic-list 594 . 607) (symbol 581 . 594) (punctuation 578 . 579) (semantic-list 560 . 578) (symbol 547 . 560) (punctuation 797 . 798) (close-paren 796 . 797) (symbol 789 . 796) (punctuation 787 . 788) (symbol 781 . 787) (punctuation 780 . 781) (open-paren 779 . 780) (symbol 766 . 779) (close-paren 763 . 764) (close-paren 760 . 761) (punctuation 756 . 757) (close-paren 755 . 756) (symbol 752 . 755) (punctuation 751 . 752) (punctuation 750 . 751) (symbol 745 . 750) (punctuation 743 . 744) (symbol 735 . 743) (punctuation 733 . 734) (symbol 732 . 733) (open-paren 731 . 732) (symbol 729 . 731) (punctuation 728 . 729) (punctuation 727 . 728) (symbol 722 . 727) (open-paren 717 . 718) (close-paren 715 . 716) (symbol 712 . 715) (punctuation 710 . 711) (punctuation 709 . 710) (symbol 705 . 708) (punctuation 704 . 705) (punctuation 703 . 704) (symbol 698 . 703) (open-paren 697 . 698) (IF 694 . 696) (punctuation 690 . 691) (close-paren 689 . 690) (symbol 685 . 689) (punctuation 683 . 684) (symbol 664 . 683) (punctuation 662 . 663) (symbol 659 . 662) (open-paren 658 . 659) (symbol 641 . 658) (punctuation 639 . 640) (symbol 633 . 638) (punctuation 631 . 632) (symbol 612 . 631) (open-paren 608 . 609) (close-paren 606 . 607) (symbol 601 . 606) (punctuation 600 . 601) (punctuation 598 . 599) (symbol 595 . 598) (open-paren 594 . 595) (symbol 581 . 594) (punctuation 578 . 579) (close-paren 577 . 578) (symbol 570 . 577) (punctuation 568 . 569) (symbol 562 . 568) (punctuation 561 . 562) (open-paren 560 . 561) (symbol 547 . 560) (punctuation 1209 . 1210) (number 1208 . 1209) (RETURN 1201 . 1207) (punctuation 1197 . 1198) (semantic-list 1174 . 1197) (symbol 1163 . 1174) (punctuation 1160 . 1161) (semantic-list 1141 . 1160) (symbol 1128 . 1141) (punctuation 1125 . 1126) (semantic-list 1103 . 1125) (symbol 1090 . 1103) (punctuation 1087 . 1088) (semantic-list 1068 . 1087) (symbol 1055 . 1068) (punctuation 1052 . 1053) (symbol 1049 . 1052) (punctuation 1047 . 1048) (symbol 1043 . 1046) (punctuation 1042 . 1043) (punctuation 1041 . 1042) (symbol 1036 . 1041) (punctuation 1033 . 1034) (symbol 1030 . 1033) (punctuation 1028 . 1029) (symbol 1024 . 1027) (punctuation 1023 . 1024) (punctuation 1022 . 1023) (symbol 1017 . 1022) (punctuation 1014 . 1015) (symbol 1012 . 1014) (punctuation 1010 . 1011) (symbol 1007 . 1009) (punctuation 1006 . 1007) (punctuation 1005 . 1006) (symbol 1000 . 1005) (semantic-list 974 . 997) (semantic-list 958 . 973) (IF 955 . 957) (punctuation 952 . 953) (semantic-list 936 . 952) (symbol 922 . 936) (punctuation 920 . 921) (symbol 914 . 919) (punctuation 1209 . 1210) (number 1208 . 1209) (RETURN 1201 . 1207) (punctuation 1197 . 1198) (close-paren 1196 . 1197) (symbol 1176 . 1196) (punctuation 1175 . 1176) (open-paren 1174 . 1175) (symbol 1163 . 1174) (punctuation 1160 . 1161) (close-paren 1159 . 1160) (symbol 1151 . 1159) (punctuation 1149 . 1150) (symbol 1143 . 1149) (punctuation 1142 . 1143) (open-paren 1141 . 1142) (symbol 1128 . 1141) (punctuation 1125 . 1126) (close-paren 1124 . 1125) (symbol 1120 . 1124) (punctuation 1119 . 1120) (punctuation 1118 . 1119) (symbol 1113 . 1118) (punctuation 1112 . 1113) (punctuation 1110 . 1111) (symbol 1105 . 1110) (punctuation 1104 . 1105) (open-paren 1103 . 1104) (symbol 1090 . 1103) (punctuation 1087 . 1088) (close-paren 1086 . 1087) (symbol 1078 . 1086) (punctuation 1076 . 1077) (symbol 1070 . 1076) (punctuation 1069 . 1070) (open-paren 1068 . 1069) (symbol 1055 . 1068) (punctuation 1052 . 1053) (symbol 1049 . 1052) (punctuation 1047 . 1048) (symbol 1043 . 1046) (punctuation 1042 . 1043) (punctuation 1041 . 1042) (symbol 1036 . 1041) (punctuation 1033 . 1034) (symbol 1030 . 1033) (punctuation 1028 . 1029) (symbol 1024 . 1027) (punctuation 1023 . 1024) (punctuation 1022 . 1023) (symbol 1017 . 1022) (punctuation 1014 . 1015) (symbol 1012 . 1014) (punctuation 1010 . 1011) (symbol 1007 . 1009) (punctuation 1006 . 1007) (punctuation 1005 . 1006) (symbol 1000 . 1005) (close-paren 996 . 997) (punctuation 993 . 994) (symbol 986 . 993) (punctuation 985 . 986) (RETURN 978 . 984) (open-paren 974 . 975) (close-paren 972 . 973) (symbol 968 . 972) (punctuation 966 . 967) (punctuation 965 . 966) (symbol 959 . 964) (open-paren 958 . 959) (IF 955 . 957) (punctuation 952 . 953) (close-paren 951 . 952) (close-paren 950 . 951) (symbol 945 . 950) (punctuation 944 . 945) (open-paren 943 . 944) (SIZEOF 937 . 943) (open-paren 936 . 937) (symbol 922 . 936) (punctuation 920 . 921) (symbol 914 . 919) (punctuation 1777 . 1778) (semantic-list 1759 . 1777) (symbol 1746 . 1759) (semantic-list 1417 . 1744) (semantic-list 1397 . 1416) (symbol 1380 . 1397) (punctuation 1377 . 1378) (semantic-list 1359 . 1377) (symbol 1346 . 1359) (punctuation 1777 . 1778) (close-paren 1776 . 1777) (symbol 1769 . 1776) (punctuation 1767 . 1768) (symbol 1761 . 1767) (punctuation 1760 . 1761) (open-paren 1759 . 1760) (symbol 1746 . 1759) (close-paren 1743 . 1744) (close-paren 1740 . 1741) (punctuation 1736 . 1737) (BREAK 1731 . 1736) (punctuation 1726 . 1727) (close-paren 1725 . 1726) (symbol 1705 . 1725) (punctuation 1704 . 1705) (open-paren 1703 . 1704) (symbol 1692 . 1703) (punctuation 1687 . 1688) (close-paren 1686 . 1687) (symbol 1681 . 1686) (open-paren 1680 . 1681) (symbol 1667 . 1680) (punctuation 1662 . 1663) (close-paren 1661 . 1662) (symbol 1658 . 1661) (open-paren 1657 . 1658) (symbol 1648 . 1657) (open-paren 1643 . 1644) (close-paren 1641 . 1642) (symbol 1639 . 1641) (punctuation 1637 . 1638) (punctuation 1636 . 1637) (symbol 1633 . 1635) (punctuation 1632 . 1633) (punctuation 1631 . 1632) (symbol 1626 . 1631) (punctuation 1624 . 1625) (punctuation 1623 . 1624) (symbol 1619 . 1622) (punctuation 1617 . 1618) (punctuation 1616 . 1617) (symbol 1612 . 1615) (punctuation 1611 . 1612) (punctuation 1610 . 1611) (symbol 1605 . 1610) (open-paren 1604 . 1605) (IF 1601 . 1603) (punctuation 1597 . 1598) (close-paren 1596 . 1597) (symbol 1592 . 1596) (punctuation 1541 . 1542) (symbol 1522 . 1541) (punctuation 1471 . 1472) (symbol 1468 . 1471) (open-paren 1467 . 1468) (symbol 1450 . 1467) (punctuation 1448 . 1449) (symbol 1442 . 1447) (punctuation 1440 . 1441) (symbol 1421 . 1440) (open-paren 1417 . 1418) (close-paren 1415 . 1416) (symbol 1410 . 1415) (punctuation 1409 . 1410) (punctuation 1407 . 1408) (symbol 1403 . 1407) (punctuation 1401 . 1402) (symbol 1398 . 1401) (open-paren 1397 . 1398) (symbol 1380 . 1397) (punctuation 1377 . 1378) (close-paren 1376 . 1377) (symbol 1369 . 1376) (punctuation 1367 . 1368) (symbol 1361 . 1367) (punctuation 1360 . 1361) (open-paren 1359 . 1360) (symbol 1346 . 1359) (punctuation 1920 . 1921) (number 1919 . 1920) (RETURN 1912 . 1918) (punctuation 1909 . 1910) (semantic-list 1883 . 1909) (symbol 1872 . 1883) (punctuation 1869 . 1870) (semantic-list 1849 . 1869) (symbol 1839 . 1849) (punctuation 1836 . 1837) (semantic-list 1828 . 1836) (symbol 1814 . 1828) (punctuation 1920 . 1921) (number 1919 . 1920) (RETURN 1912 . 1918) (punctuation 1909 . 1910) (close-paren 1908 . 1909) (number 1907 . 1908) (punctuation 1905 . 1906) (symbol 1885 . 1905) (punctuation 1884 . 1885) (open-paren 1883 . 1884) (symbol 1872 . 1883) (punctuation 1869 . 1870) (close-paren 1868 . 1869) (symbol 1859 . 1868) (punctuation 1857 . 1858) (symbol 1851 . 1857) (punctuation 1850 . 1851) (open-paren 1849 . 1850) (symbol 1839 . 1849) (punctuation 1836 . 1837) (close-paren 1835 . 1836) (symbol 1830 . 1835) (punctuation 1829 . 1830) (open-paren 1828 . 1829) (symbol 1814 . 1828) (punctuation 2040 . 2041) (semantic-list 2031 . 2040) (symbol 2019 . 2031) (punctuation 2016 . 2017) (semantic-list 2008 . 2016) (symbol 1992 . 2008) (punctuation 1989 . 1990) (semantic-list 1966 . 1989) (symbol 1958 . 1966) (punctuation 2040 . 2041) (close-paren 2039 . 2040) (symbol 2033 . 2039) (punctuation 2032 . 2033) (open-paren 2031 . 2032) (symbol 2019 . 2031) (punctuation 2016 . 2017) (close-paren 2015 . 2016) (symbol 2010 . 2015) (punctuation 2009 . 2010) (open-paren 2008 . 2009) (symbol 1992 . 2008) (punctuation 1989 . 1990) (close-paren 1988 . 1989) (close-paren 1987 . 1988) (symbol 1982 . 1987) (punctuation 1981 . 1982) (open-paren 1980 . 1981) (symbol 1967 . 1980) (open-paren 1966 . 1967) (symbol 1958 . 1966))))
+  :file "!home!qadabr!work!agent!src!core!rknet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

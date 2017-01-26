@@ -219,6 +219,193 @@
           ("RtLogPrintDbg" (spp-arg-list ("_self" "_fmt" "...") 4710 . 4728) . 
               ((DO "do" 4729 . 4731) (semantic-list "{}" 4732 . 4734) (WHILE "while" 4735 . 4740) (semantic-list "(0)" 4741 . 4744)))
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__RTLERROR_H__" variable (:constant-flag t) nil [119 133])
+            ("pp_err_groups.h" include nil nil [574 600])
+            ("ERR_ABS" variable (:constant-flag t) nil [6592 6599])
+            ("GET_ERROR_LABEL" variable (:constant-flag t) nil [6647 6662])
+            ("ERR_TO_PTR" variable (:constant-flag t) nil [6714 6724])
+            ("PTR_TO_ERR" variable (:constant-flag t) nil [6767 6777])
+            ("IS_ERR_PTR" variable (:constant-flag t) nil [6820 6830])
+            ("RT_ERROR" variable (:constant-flag t) nil [6887 6895])
+            ("IS_CRITICAL_NET_ERROR" variable (:constant-flag t) nil [6922 6943]))          
+      :file "rtlerror.h"
+      :pointmax 7234
+      :fsize 9705
+      :lastmodtime '(22652 44347 409441 132000)
+      :unmatched-syntax '((symbol 6565 . 6568) (symbol 6554 . 6564) (symbol 6548 . 6553) (symbol 6541 . 6547) (punctuation 6540 . 6541) (semantic-list 6456 . 6458) (symbol 6437 . 6456) (string 6402 . 6421) (symbol 6394 . 6401) (symbol 6383 . 6393) (symbol 6377 . 6382) (symbol 6370 . 6376) (punctuation 6369 . 6370) (symbol 6364 . 6368) (symbol 6353 . 6363) (symbol 6347 . 6352) (symbol 6340 . 6346) (punctuation 6339 . 6340) (semantic-list 5953 . 6205) (symbol 5937 . 5953) (string 6139 . 6141) (string 6056 . 6058) (string 5989 . 5991) (semantic-list 5574 . 5934) (symbol 5558 . 5574) (string 5886 . 5888) (string 5808 . 5810) (string 5743 . 5745) (string 5683 . 5685) (string 5616 . 5618) (semantic-list 3935 . 5556) (symbol 3919 . 3935) (string 5498 . 5500) (string 5383 . 5385) (string 5307 . 5309) (string 5218 . 5220) (string 5136 . 5138) (string 5032 . 5034) (string 4959 . 4961) (string 4887 . 4889) (string 4794 . 4796) (string 4675 . 4677) (string 4561 . 4563) (string 4446 . 4448) (string 4329 . 4331) (string 4236 . 4238) (string 4126 . 4128) (string 4043 . 4045) (string 3968 . 3970) (semantic-list 2845 . 3917) (symbol 2829 . 2845) (string 3872 . 3874) (string 3793 . 3795) (string 3730 . 3732) (string 3660 . 3662) (string 3597 . 3599) (string 3526 . 3528) (string 3457 . 3459) (string 3375 . 3377) (string 3289 . 3291) (string 3209 . 3211) (string 3141 . 3143) (string 3068 . 3070) (string 3001 . 3003) (string 2940 . 2942) (string 2879 . 2881) (semantic-list 674 . 2827) (symbol 658 . 674) (string 2774 . 2776) (string 2697 . 2699) (string 2611 . 2613) (string 2532 . 2534) (string 2421 . 2423) (string 2345 . 2347) (string 2273 . 2275) (string 2188 . 2190) (string 2116 . 2118) (string 2052 . 2054) (string 1975 . 1977) (string 1923 . 1925) (string 1856 . 1858) (string 1782 . 1784) (string 1706 . 1708) (string 1626 . 1628) (string 1560 . 1562) (string 1491 . 1493) (string 1412 . 1414) (string 1344 . 1347) (string 1278 . 1280) (string 1212 . 1214) (string 1132 . 1134) (string 1070 . 1072) (string 999 . 1001) (string 922 . 924) (string 845 . 847) (string 774 . 776) (string 706 . 708))
+      :lexical-table 
+        '(("ERR_TO_PTR" (spp-arg-list ("_err") 6724 . 6730) . ((semantic-list "((void*)(ptr_t)_err)" 6737 . 6757)))
+          ("__RTLERROR_H__")
+          ("PTR_TO_ERR" (spp-arg-list ("_ptr") 6777 . 6783) . ((semantic-list "((int32)(ptr_t)_ptr)" 6790 . 6810)))
+          ("IS_ERR_PTR" (spp-arg-list ("_ptr") 6830 . 6836) . ((semantic-list "(((ptr_t)(_ptr)) >= (ptr_t)-E_MAX)" 6843 . 6877)))
+          ("IS_CRITICAL_NET_ERROR" (spp-arg-list ("_err") 6943 . 6949) . ((semantic-list "(((_err) < -E_ADDRDATA) && ((_err) >= -E_CONCLOSED))" 6953 . 7005)))
+          ("GET_ERROR_LABEL" (spp-arg-list ("err") 6662 . 6667) . ((symbol "TRANSLATE_ERR_TO_LABEL" 6668 . 6690) (semantic-list "(ERR_ABS(err))" 6690 . 6704)))
+          ("RT_ERROR" (spp-arg-list ("err") 6895 . 6900) . ((semantic-list "((err) < 0)" 6901 . 6912)))
+          ("ERR_ABS" (spp-arg-list ("err") 6599 . 6604) . ((semantic-list "(((err) < 0) ? (-(err)) : (err))" 6605 . 6637)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "pp_err_groups.h"
+      :fsize 2420
+      :lastmodtime '(22652 44347 405441 121000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__RTLFORMATS_H__" variable (:constant-flag t) nil [116 132])
+            ("AND_TO_BYTE" variable (:constant-flag t) nil [142 153])
+            ("AND_TO_WORD" variable (:constant-flag t) nil [187 198])
+            ("AND_TO_DWORD" variable (:constant-flag t) nil [234 246])
+            ("DEF_IP_ADDR" variable (:constant-flag t) nil [286 297])
+            ("Rthtons" function
+               (:arguments 
+                  ( ("n" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [461 470]))                  
+                :type ("uint16" type (:type "class") nil nil))
+                nil [446 523])
+            ("Rtntohs" function
+               (:arguments 
+                  ( ("n" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [554 563]))                  
+                :type ("uint16" type (:type "class") nil nil))
+                nil [539 616])
+            ("Rthtonl" function
+               (:arguments 
+                  ( ("n" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [647 656]))                  
+                :type ("uint32" type (:type "class") nil nil))
+                nil [632 788])
+            ("Rtntohl" function
+               (:arguments 
+                  ( ("n" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [819 828]))                  
+                :type ("uint32" type (:type "class") nil nil))
+                nil [804 960])
+            ("FOLD_UINT32" variable (:constant-flag t) nil [1023 1034])
+            ("RtPrefixLenIntoNetmask" function
+               (:arguments 
+                  ( ("prefix" variable (:type ("uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1123 1136]))                  
+                :type ("uint32" type (:type "class") nil nil))
+                nil [1093 1235])
+            ("RtPpHtons" variable (:constant-flag t) nil [1299 1308])
+            ("RtPpNtohs" variable (:constant-flag t) nil [1373 1382])
+            ("RtPpHtonl" variable (:constant-flag t) nil [1414 1423])
+            ("RT_ALIGN" variable (:constant-flag t) nil [1659 1667])
+            ("RT_ALIGN_DYNAMIC_MASK" variable (:constant-flag t) nil [1821 1842])
+            ("RT_ALIGN_DYNAMIC" variable (:constant-flag t) nil [1887 1903])
+            ("RtIsUpper" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [1991 1998]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [1973 2034])
+            ("RtIsAlpha" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [2068 2075]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [2050 2139])
+            ("RtIsSpace" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [2174 2181]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [2156 2245])
+            ("RtIsDigit" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [2279 2286]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [2261 2322])
+            ("RtNumToStr" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("num" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2393 2404])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2405 2415])
+                    ("bufSize" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2416 2431])
+                    ("radix" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2432 2445]))                  
+                :type "char")
+                nil [2376 2446])
+            ("RtBufToStr" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2687 2697])
+                    ("bufSize" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2698 2713])
+                    ("res" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2714 2724]))                  
+                :type "char")
+                nil [2670 2725])
+            ("RtStrToNum" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2851 2867])
+                    ("endPtr" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2868 2882])
+                    ("radix" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2883 2896]))                  
+                :type ("uint32" type (:type "class") nil nil))
+                nil [2833 2897])
+            ("Ipv4StrToUInt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2917 2932])
+                    ("addr" variable
+                       (:pointer 1
+                        :type ("uint32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2933 2946]))                  
+                :type "int")
+                nil [2899 2947])
+            ("IPv4IntToStr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ip" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2967 2977])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2978 2988])
+                    ("bufSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2989 3004]))                  
+                :type "void")
+                nil [2949 3005]))          
+      :file "rtlformats.h"
+      :pointmax 3038
+      :fsize 3356
+      :lastmodtime '(22652 44347 409441 132000)
+      :unmatched-syntax '((symbol 2254 . 2260) (STATIC 2247 . 2253) (symbol 2149 . 2155) (STATIC 2142 . 2148) (symbol 2043 . 2049) (STATIC 2036 . 2042) (symbol 1966 . 1972) (STATIC 1959 . 1965) (symbol 1086 . 1092) (STATIC 1079 . 1085) (symbol 797 . 803) (STATIC 790 . 796) (symbol 625 . 631) (STATIC 618 . 624) (symbol 532 . 538) (STATIC 525 . 531) (symbol 439 . 445) (STATIC 432 . 438) (punctuation 520 . 521) (semantic-list 501 . 520) (punctuation 499 . 500) (semantic-list 481 . 498) (RETURN 474 . 480) (punctuation 520 . 521) (close-paren 519 . 520) (number 518 . 519) (punctuation 516 . 517) (punctuation 515 . 516) (close-paren 513 . 514) (number 507 . 513) (punctuation 505 . 506) (symbol 503 . 504) (open-paren 502 . 503) (open-paren 501 . 502) (punctuation 499 . 500) (close-paren 497 . 498) (number 496 . 497) (punctuation 494 . 495) (punctuation 493 . 494) (close-paren 491 . 492) (number 487 . 491) (punctuation 485 . 486) (symbol 483 . 484) (open-paren 482 . 483) (open-paren 481 . 482) (RETURN 474 . 480) (punctuation 613 . 614) (semantic-list 594 . 613) (punctuation 592 . 593) (semantic-list 574 . 591) (RETURN 567 . 573) (punctuation 613 . 614) (close-paren 612 . 613) (number 611 . 612) (punctuation 609 . 610) (punctuation 608 . 609) (close-paren 606 . 607) (number 600 . 606) (punctuation 598 . 599) (symbol 596 . 597) (open-paren 595 . 596) (open-paren 594 . 595) (punctuation 592 . 593) (close-paren 590 . 591) (number 589 . 590) (punctuation 587 . 588) (punctuation 586 . 587) (close-paren 584 . 585) (number 580 . 584) (punctuation 578 . 579) (symbol 576 . 577) (open-paren 575 . 576) (open-paren 574 . 575) (RETURN 567 . 573) (punctuation 785 . 786) (semantic-list 761 . 785) (punctuation 750 . 751) (semantic-list 728 . 749) (punctuation 717 . 718) (semantic-list 697 . 716) (punctuation 686 . 687) (semantic-list 667 . 685) (RETURN 660 . 666) (punctuation 785 . 786) (close-paren 784 . 785) (number 782 . 784) (punctuation 780 . 781) (punctuation 779 . 780) (close-paren 777 . 778) (number 767 . 777) (punctuation 765 . 766) (symbol 763 . 764) (open-paren 762 . 763) (open-paren 761 . 762) (punctuation 750 . 751) (close-paren 748 . 749) (number 747 . 748) (punctuation 745 . 746) (punctuation 744 . 745) (close-paren 742 . 743) (number 734 . 742) (punctuation 732 . 733) (symbol 730 . 731) (open-paren 729 . 730) (open-paren 728 . 729) (punctuation 717 . 718) (close-paren 715 . 716) (number 714 . 715) (punctuation 712 . 713) (punctuation 711 . 712) (close-paren 709 . 710) (number 703 . 709) (punctuation 701 . 702) (symbol 699 . 700) (open-paren 698 . 699) (open-paren 697 . 698) (punctuation 686 . 687) (close-paren 684 . 685) (number 682 . 684) (punctuation 680 . 681) (punctuation 679 . 680) (close-paren 677 . 678) (number 673 . 677) (punctuation 671 . 672) (symbol 669 . 670) (open-paren 668 . 669) (open-paren 667 . 668) (RETURN 660 . 666) (punctuation 957 . 958) (semantic-list 933 . 957) (punctuation 922 . 923) (semantic-list 900 . 921) (punctuation 889 . 890) (semantic-list 869 . 888) (punctuation 858 . 859) (semantic-list 839 . 857) (RETURN 832 . 838) (punctuation 957 . 958) (close-paren 956 . 957) (number 954 . 956) (punctuation 952 . 953) (punctuation 951 . 952) (close-paren 949 . 950) (number 939 . 949) (punctuation 937 . 938) (symbol 935 . 936) (open-paren 934 . 935) (open-paren 933 . 934) (punctuation 922 . 923) (close-paren 920 . 921) (number 919 . 920) (punctuation 917 . 918) (punctuation 916 . 917) (close-paren 914 . 915) (number 906 . 914) (punctuation 904 . 905) (symbol 902 . 903) (open-paren 901 . 902) (open-paren 900 . 901) (punctuation 889 . 890) (close-paren 887 . 888) (number 886 . 887) (punctuation 884 . 885) (punctuation 883 . 884) (close-paren 881 . 882) (number 875 . 881) (punctuation 873 . 874) (symbol 871 . 872) (open-paren 870 . 871) (open-paren 869 . 870) (punctuation 858 . 859) (close-paren 856 . 857) (number 854 . 856) (punctuation 852 . 853) (punctuation 851 . 852) (close-paren 849 . 850) (number 845 . 849) (punctuation 843 . 844) (symbol 841 . 842) (open-paren 840 . 841) (open-paren 839 . 840) (RETURN 832 . 838) (punctuation 1232 . 1233) (symbol 1229 . 1232) (RETURN 1222 . 1228) (semantic-list 1178 . 1219) (semantic-list 1164 . 1177) (WHILE 1158 . 1163) (punctuation 1232 . 1233) (symbol 1229 . 1232) (RETURN 1222 . 1228) (close-paren 1218 . 1219) (punctuation 1215 . 1216) (punctuation 1214 . 1215) (punctuation 1213 . 1214) (symbol 1207 . 1213) (punctuation 1203 . 1204) (number 1202 . 1203) (punctuation 1200 . 1201) (punctuation 1199 . 1200) (symbol 1195 . 1198) (punctuation 1191 . 1192) (number 1190 . 1191) (punctuation 1188 . 1189) (punctuation 1187 . 1188) (punctuation 1186 . 1187) (symbol 1182 . 1185) (open-paren 1178 . 1179) (close-paren 1176 . 1177) (number 1175 . 1176) (punctuation 1173 . 1174) (punctuation 1172 . 1173) (symbol 1165 . 1171) (open-paren 1164 . 1165) (WHILE 1158 . 1163) (punctuation 2031 . 2032) (semantic-list 2009 . 2031) (RETURN 2002 . 2008) (punctuation 2031 . 2032) (close-paren 2030 . 2031) (string 2027 . 2030) (punctuation 2025 . 2026) (punctuation 2024 . 2025) (symbol 2022 . 2023) (punctuation 2020 . 2021) (punctuation 2019 . 2020) (string 2015 . 2018) (punctuation 2013 . 2014) (punctuation 2012 . 2013) (symbol 2010 . 2011) (open-paren 2009 . 2010) (RETURN 2002 . 2008))
+      :lexical-table 
+        '(("FOLD_UINT32" (spp-arg-list ("_u") 1034 . 1038) . ((semantic-list "(((_u) >> 16) + ((_u) & 0x0000FFFFUL))" 1039 . 1077)))
+          ("RtPpHtonl" (spp-arg-list ("x") 1423 . 1426) . ((semantic-list "((((x) & 0xff) << 24) |      \\
+    (((x) & 0xff00) << 8) |      \\
+    (((x) & 0xff0000UL) >> 8) |  \\
+    (((x) & 0xff000000UL) >> 24))" 1433 . 1567)))
+          ("DEF_IP_ADDR" (spp-arg-list ("_a" "_b" "_c" "_d") 297 . 313) . ((semantic-list "(AND_TO_BYTE(_d) << 24 | \\
+     AND_TO_BYTE(_c) << 16 | \\
+     AND_TO_BYTE(_b) << 8 |  \\
+     AND_TO_BYTE(_a))" 320 . 430)))
+          ("AND_TO_BYTE" (spp-arg-list ("_v") 153 . 157) . ((semantic-list "((_v) & 0xFF)" 164 . 177)))
+          ("AND_TO_DWORD" (spp-arg-list ("_v") 246 . 250) . ((semantic-list "((_v) & 0xFFFFFFFF)" 257 . 276)))
+          ("__RTLFORMATS_H__")
+          ("AND_TO_WORD" (spp-arg-list ("_v") 198 . 202) . ((semantic-list "((_v) & 0xFFFF)" 209 . 224)))
+          ("RT_ALIGN_DYNAMIC_MASK" (spp-arg-list ("x" "mask") 1842 . 1851) . ((semantic-list "(((x) + (mask)) & ~(mask))" 1852 . 1878)))
+          ("RT_ALIGN_DYNAMIC" (spp-arg-list ("x" "typex" "a") 1903 . 1916) . ((symbol "RT_ALIGN_DYNAMIC_MASK" 1917 . 1938) (semantic-list "(x, (typex)(a) - 1)" 1938 . 1957)))
+          ("RtPpHtons" (spp-arg-list ("x") 1308 . 1311) . ((semantic-list "((((x) & 0xff) << 8) | (((x) & 0xff00) >> 8))" 1318 . 1363)))
+          ("RtPpNtohs" (spp-arg-list ("x") 1382 . 1385) . ((symbol "RtPpHtons" 1392 . 1401) (semantic-list "(x)" 1401 . 1404)))
+          ("RT_ALIGN" (spp-arg-list ("expr" "alignvalue") 1667 . 1685) . 
+              ((symbol "expr" 1686 . 1690) (symbol "__attribute__" 1691 . 1704) (semantic-list "((aligned(alignvalue)))" 1704 . 1727)))
+          )
 ))
   :file "!home!qadabr!work!agent!src!infector!loader!rtlib!semantic.cache"
   :semantic-tag-version "2.0"

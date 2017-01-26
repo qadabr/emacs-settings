@@ -1,0 +1,152 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRYPTOLIB" variable (:constant-flag t) nil [111 120])
+            ("CRYPTOLIB_BLOCK_CIPHERS" variable (:constant-flag t) nil [129 152])
+            ("rtlib/rtlib.h" include (:system-flag t) nil [154 178])
+            ("crypto/cryptolib.h" include (:system-flag t) nil [179 208])
+            ("block_ciphers.h" include nil nil [209 235])
+            ("aes.h" include nil nil [236 252])
+            ("des.h" include nil nil [253 269])
+            ("gost.h" include nil nil [270 287])
+            ("_BlockCipher" type
+               (:members 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [312 322])
+                    ("type" variable (:type ("BlockCipherType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [324 345])
+                    ("iface" variable
+                       (:pointer 1
+                        :type ("BlockCipherIface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [347 371]))                  
+                :type "struct")
+                nil [289 374])
+            ("aesIface" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("BlockCipherIface" type (:type "class") nil nil))
+                nil [376 410])
+            ("desIface" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("BlockCipherIface" type (:type "class") nil nil))
+                nil [411 445])
+            ("gostIface" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("BlockCipherIface" type (:type "class") nil nil))
+                nil [446 481])
+            ("BlockCipherInit" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable (:type ("BlockCipherType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [519 540]))                  
+                :type ("BlockCipher" type (:type "class") nil nil))
+                nil [483 1335])
+            ("BlockCipherSetKey" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cipher" variable
+                       (:pointer 1
+                        :type ("BlockCipher" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1368 1388])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("uint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1389 1400])
+                    ("keyLen" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1401 1415]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [1337 1476])
+            ("BlockCipherEncryptBlock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cipher" variable
+                       (:pointer 1
+                        :type ("BlockCipher" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1514 1534])
+                    ("input" variable
+                       (:pointer 1
+                        :type ("uint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1535 1548])
+                    ("output" variable
+                       (:pointer 1
+                        :type ("uint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1549 1563]))                  
+                :type "void")
+                nil [1478 1629])
+            ("BlockCipherDecryptBlock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cipher" variable
+                       (:pointer 1
+                        :type ("BlockCipher" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1667 1687])
+                    ("input" variable
+                       (:pointer 1
+                        :type ("uint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1721 1734])
+                    ("output" variable
+                       (:pointer 1
+                        :type ("uint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1735 1749]))                  
+                :type "void")
+                nil [1631 1815])
+            ("BlockCipherDeinit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cipher" variable
+                       (:pointer 1
+                        :type ("BlockCipher" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1847 1867]))                  
+                :type "void")
+                nil [1817 1933])
+            ("blockCipherIfaces" variable
+               (:default-value "{
+	BlockCipherInit,
+	BlockCipherSetKey,
+	BlockCipherEncryptBlock,
+	BlockCipherDecryptBlock,
+	BlockCipherDeinit,
+}"
+                :type ("BlockCipherIfaces" type (:type "class") nil nil))
+                nil [1935 2087])
+            ("g_blockCipherIfaces" variable
+               (:pointer 1
+                :default-value "&blockCipherIfaces"
+                :type ("BlockCipherIfaces" type (:type "class") nil nil))
+                nil [2089 2149]))          
+      :file "block_ciphers.c"
+      :pointmax 2150
+      :fsize 2194
+      :lastmodtime '(22652 44347 377441 43000)
+      :unmatched-syntax '((close-paren 372 . 373) (close-paren 372 . 373) (punctuation 1332 . 1333) (symbol 1329 . 1332) (RETURN 1322 . 1328) (semantic-list 700 . 1319) (semantic-list 693 . 699) (SWITCH 686 . 692) (punctuation 682 . 683) (symbol 678 . 682) (punctuation 676 . 677) (symbol 671 . 675) (punctuation 670 . 671) (punctuation 669 . 670) (symbol 666 . 669) (semantic-list 629 . 664) (semantic-list 615 . 628) (IF 612 . 614) (punctuation 609 . 610) (semantic-list 595 . 609) (symbol 577 . 595) (punctuation 575 . 576) (symbol 571 . 574) (punctuation 1332 . 1333) (symbol 1329 . 1332) (RETURN 1322 . 1328) (close-paren 1318 . 1319) (punctuation 1315 . 1316) (BREAK 1310 . 1315) (punctuation 1305 . 1306) (close-paren 1304 . 1305) (number 1303 . 1304) (open-paren 1302 . 1303) (symbol 1294 . 1302) (punctuation 1289 . 1290) (DEFAULT 1282 . 1289) (punctuation 1277 . 1278) (BREAK 1272 . 1277) (punctuation 1267 . 1268) (symbol 1258 . 1267) (punctuation 1256 . 1257) (symbol 1250 . 1255) (punctuation 1249 . 1250) (punctuation 1248 . 1249) (symbol 1245 . 1248) (close-paren 1240 . 1241) (punctuation 1235 . 1236) (close-paren 1234 . 1235) (symbol 1227 . 1234) (punctuation 1226 . 1227) (open-paren 1225 . 1226) (symbol 1215 . 1225) (RETURN 1208 . 1214) (punctuation 1202 . 1203) (close-paren 1201 . 1202) (symbol 1198 . 1201) (open-paren 1197 . 1198) (symbol 1184 . 1197) (open-paren 1178 . 1179) (close-paren 1176 . 1177) (symbol 1172 . 1176) (punctuation 1170 . 1171) (punctuation 1169 . 1170) (symbol 1165 . 1168) (punctuation 1164 . 1165) (punctuation 1163 . 1164) (symbol 1160 . 1163) (open-paren 1159 . 1160) (IF 1156 . 1158) (punctuation 1151 . 1152) (close-paren 1150 . 1151) (close-paren 1149 . 1150) (symbol 1142 . 1149) (open-paren 1141 . 1142) (SIZEOF 1135 . 1141) (open-paren 1134 . 1135) (symbol 1116 . 1134) (punctuation 1114 . 1115) (symbol 1110 . 1113) (punctuation 1109 . 1110) (punctuation 1108 . 1109) (symbol 1105 . 1108) (punctuation 1100 . 1101) (symbol 1093 . 1100) (CASE 1088 . 1092) (punctuation 1081 . 1082) (BREAK 1076 . 1081) (punctuation 1071 . 1072) (symbol 1063 . 1071) (punctuation 1061 . 1062) (symbol 1055 . 1060) (punctuation 1054 . 1055) (punctuation 1053 . 1054) (symbol 1050 . 1053) (close-paren 1045 . 1046) (punctuation 1040 . 1041) (close-paren 1039 . 1040) (symbol 1032 . 1039) (punctuation 1031 . 1032) (open-paren 1030 . 1031) (symbol 1020 . 1030) (RETURN 1013 . 1019) (punctuation 1007 . 1008) (close-paren 1006 . 1007) (symbol 1003 . 1006) (open-paren 1002 . 1003) (symbol 989 . 1002) (open-paren 983 . 984) (close-paren 981 . 982) (symbol 977 . 981) (punctuation 975 . 976) (punctuation 974 . 975) (symbol 970 . 973) (punctuation 969 . 970) (punctuation 968 . 969) (symbol 965 . 968) (open-paren 964 . 965) (IF 961 . 963) (punctuation 956 . 957) (close-paren 955 . 956) (close-paren 954 . 955) (symbol 948 . 954) (open-paren 947 . 948) (SIZEOF 941 . 947) (open-paren 940 . 941) (symbol 922 . 940) (punctuation 920 . 921) (symbol 916 . 919) (punctuation 915 . 916) (punctuation 914 . 915) (symbol 911 . 914) (punctuation 906 . 907) (symbol 900 . 906) (CASE 895 . 899) (punctuation 890 . 891) (BREAK 885 . 890) (punctuation 880 . 881) (symbol 872 . 880) (punctuation 870 . 871) (symbol 864 . 869) (punctuation 863 . 864) (punctuation 862 . 863) (symbol 859 . 862) (close-paren 854 . 855) (punctuation 849 . 850) (close-paren 848 . 849) (symbol 841 . 848) (punctuation 840 . 841) (open-paren 839 . 840) (symbol 829 . 839) (RETURN 822 . 828) (punctuation 816 . 817) (close-paren 815 . 816) (symbol 812 . 815) (open-paren 811 . 812) (symbol 798 . 811) (open-paren 792 . 793) (close-paren 790 . 791) (symbol 786 . 790) (punctuation 784 . 785) (punctuation 783 . 784) (symbol 779 . 782) (punctuation 778 . 779) (punctuation 777 . 778) (symbol 774 . 777) (open-paren 773 . 774) (IF 770 . 772) (punctuation 765 . 766) (close-paren 764 . 765) (close-paren 763 . 764) (symbol 757 . 763) (open-paren 756 . 757) (SIZEOF 750 . 756) (open-paren 749 . 750) (symbol 731 . 749) (punctuation 729 . 730) (symbol 725 . 728) (punctuation 724 . 725) (punctuation 723 . 724) (symbol 720 . 723) (punctuation 715 . 716) (symbol 709 . 715) (CASE 704 . 708) (open-paren 700 . 701) (close-paren 698 . 699) (symbol 694 . 698) (open-paren 693 . 694) (SWITCH 686 . 692) (punctuation 682 . 683) (symbol 678 . 682) (punctuation 676 . 677) (symbol 671 . 675) (punctuation 670 . 671) (punctuation 669 . 670) (symbol 666 . 669) (close-paren 663 . 664) (punctuation 660 . 661) (close-paren 659 . 660) (symbol 652 . 659) (punctuation 651 . 652) (open-paren 650 . 651) (symbol 640 . 650) (RETURN 633 . 639) (open-paren 629 . 630) (close-paren 627 . 628) (symbol 623 . 627) (punctuation 621 . 622) (punctuation 620 . 621) (symbol 616 . 619) (open-paren 615 . 616) (IF 612 . 614) (punctuation 609 . 610) (close-paren 608 . 609) (close-paren 607 . 608) (symbol 604 . 607) (punctuation 603 . 604) (open-paren 602 . 603) (SIZEOF 596 . 602) (open-paren 595 . 596) (symbol 577 . 595) (punctuation 575 . 576) (symbol 571 . 574) (punctuation 1473 . 1474) (semantic-list 1447 . 1473) (symbol 1441 . 1447) (punctuation 1440 . 1441) (punctuation 1439 . 1440) (symbol 1434 . 1439) (punctuation 1433 . 1434) (punctuation 1432 . 1433) (symbol 1426 . 1432) (RETURN 1419 . 1425) (punctuation 1473 . 1474) (close-paren 1472 . 1473) (symbol 1466 . 1472) (punctuation 1464 . 1465) (symbol 1461 . 1464) (punctuation 1459 . 1460) (symbol 1456 . 1459) (punctuation 1455 . 1456) (punctuation 1454 . 1455) (symbol 1448 . 1454) (open-paren 1447 . 1448) (symbol 1441 . 1447) (punctuation 1440 . 1441) (punctuation 1439 . 1440) (symbol 1434 . 1439) (punctuation 1433 . 1434) (punctuation 1432 . 1433) (symbol 1426 . 1432) (RETURN 1419 . 1425) (punctuation 1626 . 1627) (RETURN 1620 . 1626) (punctuation 1617 . 1618) (semantic-list 1589 . 1617) (symbol 1582 . 1589) (punctuation 1581 . 1582) (punctuation 1580 . 1581) (symbol 1575 . 1580) (punctuation 1574 . 1575) (punctuation 1573 . 1574) (symbol 1567 . 1573) (punctuation 1626 . 1627) (RETURN 1620 . 1626) (punctuation 1617 . 1618) (close-paren 1616 . 1617) (symbol 1610 . 1616) (punctuation 1608 . 1609) (symbol 1603 . 1608) (punctuation 1601 . 1602) (symbol 1598 . 1601) (punctuation 1597 . 1598) (punctuation 1596 . 1597) (symbol 1590 . 1596) (open-paren 1589 . 1590) (symbol 1582 . 1589) (punctuation 1581 . 1582) (punctuation 1580 . 1581) (symbol 1575 . 1580) (punctuation 1574 . 1575) (punctuation 1573 . 1574) (symbol 1567 . 1573) (punctuation 1812 . 1813) (RETURN 1806 . 1812) (punctuation 1803 . 1804) (semantic-list 1775 . 1803) (symbol 1768 . 1775) (punctuation 1767 . 1768) (punctuation 1766 . 1767) (symbol 1761 . 1766) (punctuation 1760 . 1761) (punctuation 1759 . 1760) (symbol 1753 . 1759) (punctuation 1812 . 1813) (RETURN 1806 . 1812) (punctuation 1803 . 1804) (close-paren 1802 . 1803) (symbol 1796 . 1802) (punctuation 1794 . 1795) (symbol 1789 . 1794) (punctuation 1787 . 1788) (symbol 1784 . 1787) (punctuation 1783 . 1784) (punctuation 1782 . 1783) (symbol 1776 . 1782) (open-paren 1775 . 1776) (symbol 1768 . 1775) (punctuation 1767 . 1768) (punctuation 1766 . 1767) (symbol 1761 . 1766) (punctuation 1760 . 1761) (punctuation 1759 . 1760) (symbol 1753 . 1759) (punctuation 1930 . 1931) (RETURN 1924 . 1930) (punctuation 1921 . 1922) (semantic-list 1913 . 1921) (symbol 1900 . 1913) (punctuation 1897 . 1898) (semantic-list 1884 . 1897) (symbol 1871 . 1884) (punctuation 1930 . 1931) (RETURN 1924 . 1930) (punctuation 1921 . 1922) (close-paren 1920 . 1921) (symbol 1914 . 1920) (open-paren 1913 . 1914) (symbol 1900 . 1913) (punctuation 1897 . 1898) (close-paren 1896 . 1897) (symbol 1893 . 1896) (punctuation 1892 . 1893) (punctuation 1891 . 1892) (symbol 1885 . 1891) (open-paren 1884 . 1885) (symbol 1871 . 1884) (punctuation 2083 . 2084) (symbol 2066 . 2083) (punctuation 2063 . 2064) (symbol 2040 . 2063) (punctuation 2037 . 2038) (symbol 2014 . 2037) (punctuation 2011 . 2012) (symbol 1994 . 2011) (punctuation 1991 . 1992) (symbol 1976 . 1991) (punctuation 2083 . 2084) (symbol 2066 . 2083) (punctuation 2063 . 2064) (symbol 2040 . 2063) (punctuation 2037 . 2038) (symbol 2014 . 2037) (punctuation 2011 . 2012) (symbol 1994 . 2011) (punctuation 1991 . 1992) (symbol 1976 . 1991))
+      :lexical-table 
+        '(("CRYPTOLIB_BLOCK_CIPHERS")
+          ("CRYPTOLIB")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "block_ciphers.h"
+      :fsize 624
+      :lastmodtime '(22652 44347 377441 43000))
+    (semanticdb-table "semanticdb-table"
+      :file "aes.h"
+      :fsize 696
+      :lastmodtime '(22652 44347 377441 43000))
+    (semanticdb-table "semanticdb-table"
+      :file "des.h"
+      :fsize 568
+      :lastmodtime '(22652 44347 377441 43000))
+    (semanticdb-table "semanticdb-table"
+      :file "gost.h"
+      :fsize 350
+      :lastmodtime '(22652 44347 377441 43000)))
+  :file "!home!qadabr!work!agent!src!core!crypto!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

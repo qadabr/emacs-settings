@@ -73,9 +73,21 @@
 (add-hook 'c-mode-common-hook 'irony-mode)
 (add-hook 'c-mode-common-hook 'company-mode)
 
+(require 'semantic/ia)
+(global-semanticdb-minor-mode)
+(global-semantic-highlight-func-mode)
+(global-semantic-decoration-mode)
+(global-semantic-idle-scheduler-mode)
+(global-semantic-idle-completions-mode)
+(global-semantic-idle-summary-mode)
+
+(semantic-mode 1)
+
+(semanticdb-enable-gnu-global-databases 'c-mode)
+(semanticdb-enable-gnu-global-databases 'c++-mode)
+
 ;; Рефакторинг
 (require 'srefactor)
-(semantic-mode 1)
 (define-key c-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
 (define-key c++-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
 

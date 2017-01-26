@@ -1,0 +1,179 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "netdevice.c"
+      :pointmax 12980
+      :fsize 13831
+      :lastmodtime '(22665 59165 499693 428000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/kernel.h" include (:system-flag t) nil [1 26])
+            ("linux/module.h" include (:system-flag t) nil [27 52])
+            ("linux/netfilter.h" include (:system-flag t) nil [53 81])
+            ("linux/netfilter_ipv4.h" include (:system-flag t) nil [82 115])
+            ("linux/if_ether.h" include (:system-flag t) nil [116 143])
+            ("rtlib/rtlib.h" include (:system-flag t) nil [145 169])
+            ("rknet/packetfilter.h" include (:system-flag t) nil [170 201])
+            ("NF_IP_PRE_ROUTING" variable (:constant-flag t) nil [237 254])
+            ("NF_IP_POST_ROUTING" variable (:constant-flag t) nil [318 336])
+            ("hookfn" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ops" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("nf_hook_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [443 473])
+                    ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [474 494])
+                    ("in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("net_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [495 523])
+                    ("out" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("net_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [551 580])
+                    ("okfn" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("sk_buff" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [593 610]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "unsigned int")
+                nil [416 806])
+            ("hookfn" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hnum" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1262 1280])
+                    ("pskb" variable
+                       (:pointer 2
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1281 1303])
+                    ("in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("net_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1304 1332])
+                    ("out" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("net_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1360 1389])
+                    ("okfn" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("sk_buff" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1402 1419]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "unsigned int")
+                nil [1235 1615])
+            ("hooks" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+	{
+		.hook = hookfn,
+#if LINUX_VERSION_CODE > KERNEL_VERSION(2,6,0)
+		.owner = THIS_MODULE,
+#endif
+		.pf = PF_INET,
+		.hooknum = NF_IP_PRE_ROUTING,
+		.priority = 30000,
+	}, {
+		.hook = hookfn,
+#if LINUX_VERSION_CODE > KERNEL_VERSION(2,6,0)
+		.owner = THIS_MODULE,
+#endif
+		.pf = PF_INET,
+		.hooknum = NF_IP_POST_ROUTING,
+		.priority = 30000,
+	}, 
+#if LINUX_VERSION_CODE > KERNEL_VERSION(2,6,0)
+	{
+		.hook = hookfn,
+		.owner = THIS_MODULE,
+		.pf = NFPROTO_ARP,
+		.hooknum = NF_IP_PRE_ROUTING,
+		.priority = 30000,
+	}, {
+		.hook = hookfn,
+		.owner = THIS_MODULE,
+		.pf = NFPROTO_ARP,
+		.hooknum = NF_IP_POST_ROUTING,
+		.priority = 30000,
+	},
+#endif
+}"
+                :type ("nf_hook_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1624 2311])
+            ("init_nf_iface" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2331 2336]))                  
+                :type "int")
+                nil [2313 2581])
+            ("cleanup_nf_iface" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2605 2610]))                  
+                :type "void")
+                nil [2583 2725]))          
+      :file "nf_iface.c"
+      :pointmax 2726
+      :fsize 2723
+      :lastmodtime '(22665 59347 812207 624000)
+      :unmatched-syntax '((punctuation 796 . 797) (symbol 787 . 796) (RETURN 780 . 786) (punctuation 777 . 778) (semantic-list 722 . 777) (symbol 700 . 722) (punctuation 697 . 698) (symbol 686 . 697) (punctuation 684 . 685) (symbol 673 . 683) (punctuation 671 . 672) (symbol "NF_INET_PRE_ROUTING" 653 . 670) (punctuation 651 . 652) (punctuation 650 . 651) (punctuation 648 . 649) (punctuation 647 . 648) (symbol 644 . 647) (punctuation 642 . 643) (symbol 632 . 641) (punctuation 796 . 797) (symbol 787 . 796) (RETURN 780 . 786) (punctuation 777 . 778) (close-paren 776 . 777) (symbol 767 . 776) (punctuation 765 . 766) (symbol 756 . 764) (punctuation 754 . 755) (symbol 750 . 753) (punctuation 749 . 750) (punctuation 748 . 749) (symbol 745 . 748) (punctuation 743 . 744) (symbol 735 . 743) (punctuation 733 . 734) (symbol 728 . 732) (punctuation 727 . 728) (punctuation 726 . 727) (symbol 723 . 726) (open-paren 722 . 723) (symbol 700 . 722) (punctuation 697 . 698) (symbol 686 . 697) (punctuation 684 . 685) (symbol 673 . 683) (punctuation 671 . 672) (symbol "NF_INET_PRE_ROUTING" 653 . 670) (punctuation 651 . 652) (punctuation 650 . 651) (punctuation 648 . 649) (punctuation 647 . 648) (symbol 644 . 647) (punctuation 642 . 643) (symbol 632 . 641) (punctuation 1218 . 1219) (symbol 1209 . 1218) (RETURN 1202 . 1208) (punctuation 1199 . 1200) (semantic-list 1144 . 1199) (symbol 1122 . 1144) (punctuation 1119 . 1120) (symbol 1108 . 1119) (punctuation 1106 . 1107) (symbol 1095 . 1105) (punctuation 1093 . 1094) (symbol "NF_INET_PRE_ROUTING" 1075 . 1092) (punctuation 1073 . 1074) (punctuation 1072 . 1073) (symbol 1067 . 1071) (punctuation 1065 . 1066) (symbol 1055 . 1064) (punctuation 1218 . 1219) (symbol 1209 . 1218) (RETURN 1202 . 1208) (punctuation 1199 . 1200) (close-paren 1198 . 1199) (symbol 1189 . 1198) (punctuation 1187 . 1188) (symbol 1178 . 1186) (punctuation 1176 . 1177) (symbol 1172 . 1175) (punctuation 1171 . 1172) (punctuation 1170 . 1171) (symbol 1167 . 1170) (punctuation 1165 . 1166) (symbol 1157 . 1165) (punctuation 1155 . 1156) (symbol 1150 . 1154) (punctuation 1149 . 1150) (punctuation 1148 . 1149) (symbol 1145 . 1148) (open-paren 1144 . 1145) (symbol 1122 . 1144) (punctuation 1119 . 1120) (symbol 1108 . 1119) (punctuation 1106 . 1107) (symbol 1095 . 1105) (punctuation 1093 . 1094) (symbol "NF_INET_PRE_ROUTING" 1075 . 1092) (punctuation 1073 . 1074) (punctuation 1072 . 1073) (symbol 1067 . 1071) (punctuation 1065 . 1066) (symbol 1055 . 1064) (punctuation 1605 . 1606) (symbol 1596 . 1605) (RETURN 1589 . 1595) (punctuation 1586 . 1587) (semantic-list 1523 . 1586) (symbol 1501 . 1523) (punctuation 1498 . 1499) (symbol 1487 . 1498) (punctuation 1485 . 1486) (symbol 1474 . 1484) (punctuation 1472 . 1473) (symbol "NF_INET_PRE_ROUTING" 1454 . 1471) (punctuation 1452 . 1453) (punctuation 1451 . 1452) (symbol 1446 . 1450) (punctuation 1444 . 1445) (symbol 1434 . 1443) (punctuation 1605 . 1606) (symbol 1596 . 1605) (RETURN 1589 . 1595) (punctuation 1586 . 1587) (close-paren 1585 . 1586) (symbol 1576 . 1585) (punctuation 1574 . 1575) (symbol 1565 . 1573) (punctuation 1563 . 1564) (symbol 1559 . 1562) (punctuation 1558 . 1559) (punctuation 1557 . 1558) (close-paren 1556 . 1557) (symbol 1552 . 1556) (punctuation 1551 . 1552) (open-paren 1550 . 1551) (punctuation 1548 . 1549) (symbol 1540 . 1548) (punctuation 1538 . 1539) (symbol 1533 . 1537) (punctuation 1532 . 1533) (punctuation 1531 . 1532) (close-paren 1530 . 1531) (symbol 1526 . 1530) (punctuation 1525 . 1526) (open-paren 1524 . 1525) (open-paren 1523 . 1524) (symbol 1501 . 1523) (punctuation 1498 . 1499) (symbol 1487 . 1498) (punctuation 1485 . 1486) (symbol 1474 . 1484) (punctuation 1472 . 1473) (symbol "NF_INET_PRE_ROUTING" 1454 . 1471) (punctuation 1452 . 1453) (punctuation 1451 . 1452) (symbol 1446 . 1450) (punctuation 1444 . 1445) (symbol 1434 . 1443) (punctuation 1999 . 2000) (semantic-list 1828 . 1999) (punctuation 1826 . 1827) (semantic-list 1656 . 1826) (punctuation 1999 . 2000) (close-paren 1998 . 1999) (punctuation 1995 . 1996) (number 1990 . 1995) (punctuation 1988 . 1989) (symbol 1979 . 1987) (punctuation 1978 . 1979) (punctuation 1974 . 1975) (symbol "NF_INET_POST_ROUTING" 1956 . 1974) (punctuation 1954 . 1955) (symbol 1946 . 1953) (punctuation 1945 . 1946) (punctuation 1941 . 1942) (symbol 1934 . 1941) (punctuation 1932 . 1933) (symbol 1929 . 1931) (punctuation 1928 . 1929) (punctuation 1846 . 1847) (symbol 1840 . 1846) (punctuation 1838 . 1839) (symbol 1833 . 1837) (punctuation 1832 . 1833) (open-paren 1828 . 1829) (punctuation 1826 . 1827) (close-paren 1825 . 1826) (punctuation 1822 . 1823) (number 1817 . 1822) (punctuation 1815 . 1816) (symbol 1806 . 1814) (punctuation 1805 . 1806) (punctuation 1801 . 1802) (symbol "NF_INET_PRE_ROUTING" 1784 . 1801) (punctuation 1782 . 1783) (symbol 1774 . 1781) (punctuation 1773 . 1774) (punctuation 1769 . 1770) (symbol 1762 . 1769) (punctuation 1760 . 1761) (symbol 1757 . 1759) (punctuation 1756 . 1757) (punctuation 1674 . 1675) (symbol 1668 . 1674) (punctuation 1666 . 1667) (symbol 1661 . 1665) (punctuation 1660 . 1661) (open-paren 1656 . 1657) (punctuation 2570 . 2571) (symbol 2567 . 2570) (RETURN 2560 . 2566) (punctuation 2557 . 2558) (close-paren 2556 . 2557) (semantic-list 2553 . 2556) (symbol 2548 . 2553) (punctuation 2547 . 2548) (open-paren 2546 . 2547) (symbol 2528 . 2546) (close-paren 2524 . 2525) (punctuation 2523 . 2524) (punctuation 2522 . 2523) (symbol 2521 . 2522) (punctuation 2519 . 2520) (number 2518 . 2519) (punctuation 2516 . 2517) (punctuation 2515 . 2516) (symbol 2513 . 2514) (punctuation 2511 . 2512) (punctuation 2510 . 2511) (punctuation 2509 . 2510) (symbol 2508 . 2509) (open-paren 2507 . 2508) (FOR 2503 . 2506) (punctuation 2500 . 2501) (symbol 2497 . 2500) (punctuation 2494 . 2495) (symbol 2491 . 2494) (RETURN 2484 . 2490) (close-paren 2481 . 2482) (semantic-list 2461 . 2466) (IF 2458 . 2460) (punctuation 2454 . 2455) (semantic-list 2443 . 2454) (symbol 2427 . 2443) (punctuation 2425 . 2426) (symbol 2421 . 2424) (open-paren 2417 . 2418) (close-paren 2415 . 2416) (punctuation 2414 . 2415) (punctuation 2413 . 2414) (symbol 2412 . 2413) (punctuation 2410 . 2411) (semantic-list 2403 . 2410) (symbol 2393 . 2403) (punctuation 2391 . 2392) (symbol 2389 . 2390) (punctuation 2387 . 2388) (number 2386 . 2387) (punctuation 2384 . 2385) (symbol 2382 . 2383) (open-paren 2381 . 2382) (FOR 2377 . 2380) (punctuation 2374 . 2375) (close-paren 2373 . 2374) (open-paren 2372 . 2373) (symbol 2356 . 2372) (punctuation 2570 . 2571) (symbol 2567 . 2570) (RETURN 2560 . 2566) (punctuation 2557 . 2558) (semantic-list 2546 . 2557) (symbol 2528 . 2546) (semantic-list 2507 . 2525) (FOR 2503 . 2506) (punctuation 2500 . 2501) (symbol 2497 . 2500) (punctuation 2494 . 2495) (symbol 2491 . 2494) (RETURN 2484 . 2490) (semantic-list 2417 . 2482) (semantic-list 2381 . 2416) (FOR 2377 . 2380) (punctuation 2374 . 2375) (semantic-list 2372 . 2374) (symbol 2356 . 2372) (punctuation 2570 . 2571) (symbol 2567 . 2570) (RETURN 2560 . 2566) (punctuation 2557 . 2558) (close-paren 2556 . 2557) (close-paren 2555 . 2556) (symbol 2554 . 2555) (open-paren 2553 . 2554) (symbol 2548 . 2553) (punctuation 2547 . 2548) (open-paren 2546 . 2547) (symbol 2528 . 2546) (close-paren 2524 . 2525) (punctuation 2523 . 2524) (punctuation 2522 . 2523) (symbol 2521 . 2522) (punctuation 2519 . 2520) (number 2518 . 2519) (punctuation 2516 . 2517) (punctuation 2515 . 2516) (symbol 2513 . 2514) (punctuation 2511 . 2512) (punctuation 2510 . 2511) (punctuation 2509 . 2510) (symbol 2508 . 2509) (open-paren 2507 . 2508) (FOR 2503 . 2506) (punctuation 2500 . 2501) (symbol 2497 . 2500) (punctuation 2494 . 2495) (symbol 2491 . 2494) (RETURN 2484 . 2490) (close-paren 2481 . 2482) (close-paren 2465 . 2466) (symbol 2462 . 2465) (open-paren 2461 . 2462) (IF 2458 . 2460) (punctuation 2454 . 2455) (close-paren 2453 . 2454) (close-paren 2452 . 2453) (symbol 2451 . 2452) (open-paren 2450 . 2451) (symbol 2445 . 2450) (punctuation 2444 . 2445) (open-paren 2443 . 2444) (symbol 2427 . 2443) (punctuation 2425 . 2426) (symbol 2421 . 2424) (open-paren 2417 . 2418) (close-paren 2415 . 2416) (punctuation 2414 . 2415) (punctuation 2413 . 2414) (symbol 2412 . 2413) (punctuation 2410 . 2411) (close-paren 2409 . 2410) (symbol 2404 . 2409) (open-paren 2403 . 2404) (symbol 2393 . 2403) (punctuation 2391 . 2392) (symbol 2389 . 2390) (punctuation 2387 . 2388) (number 2386 . 2387) (punctuation 2384 . 2385) (symbol 2382 . 2383) (open-paren 2381 . 2382) (FOR 2377 . 2380) (punctuation 2374 . 2375) (close-paren 2373 . 2374) (open-paren 2372 . 2373) (symbol 2356 . 2372) (punctuation 2715 . 2716) (semantic-list 2713 . 2715) (symbol 2695 . 2713) (semantic-list 2655 . 2692) (semantic-list 2619 . 2654) (FOR 2615 . 2618) (punctuation 2715 . 2716) (close-paren 2714 . 2715) (open-paren 2713 . 2714) (symbol 2695 . 2713) (close-paren 2691 . 2692) (punctuation 2688 . 2689) (close-paren 2687 . 2688) (close-paren 2686 . 2687) (symbol 2685 . 2686) (open-paren 2684 . 2685) (symbol 2679 . 2684) (punctuation 2678 . 2679) (open-paren 2677 . 2678) (symbol 2659 . 2677) (open-paren 2655 . 2656) (close-paren 2653 . 2654) (punctuation 2652 . 2653) (punctuation 2651 . 2652) (symbol 2650 . 2651) (punctuation 2648 . 2649) (close-paren 2647 . 2648) (symbol 2642 . 2647) (open-paren 2641 . 2642) (symbol 2631 . 2641) (punctuation 2629 . 2630) (symbol 2627 . 2628) (punctuation 2625 . 2626) (number 2624 . 2625) (punctuation 2622 . 2623) (symbol 2620 . 2621) (open-paren 2619 . 2620) (FOR 2615 . 2618))
+      :lexical-table 
+        '(("NF_IP_POST_ROUTING" . ((symbol "NF_INET_POST_ROUTING" 338 . 358)))
+          ("NF_IP_PRE_ROUTING" . ((symbol "NF_INET_PRE_ROUTING" 256 . 275)))
+          )
+))
+  :file "!home!qadabr!work!agent!src!core!rknet!lin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

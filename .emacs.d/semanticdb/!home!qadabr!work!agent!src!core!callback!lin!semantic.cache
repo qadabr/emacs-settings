@@ -1,0 +1,204 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/kernel.h" include (:system-flag t) nil [1 26])
+            ("linux/module.h" include (:system-flag t) nil [27 52])
+            ("linux/mount.h" include (:system-flag t) nil [53 77])
+            ("linux/fs.h" include (:system-flag t) nil [78 99])
+            ("linux/slab.h" include (:system-flag t) nil [100 123])
+            ("linux/init_task.h" include (:system-flag t) nil [124 152])
+            ("linux/workqueue.h" include (:system-flag t) nil [153 181])
+            ("linux/nsproxy.h" include (:system-flag t) nil [182 208])
+            ("linux/mnt_namespace.h" include (:system-flag t) nil [209 241])
+            ("rtlib/rtlib.h" include (:system-flag t) nil [243 267])
+            ("callback/callback.h" include (:system-flag t) nil [268 298])
+            ("active_hook" type
+               (:members 
+                  ( ("fstype" variable
+                       (:pointer 1
+                        :type ("file_system_type" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [375 407])
+                    ("read_super" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("sb" variable
+                               (:pointer 1
+                                :type ("super_block" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [576 600])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [601 613])
+                            ("silent" variable (:type "int") (reparse-symbol arg-sub-list) [614 625]))                          
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [542 626])
+                    ("hooks" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [635 658]))                  
+                :type "struct")
+                nil [353 661])
+            ("LIST_HEAD" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("active_hooks" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [679 692]))                  
+                :type "int")
+                nil [662 693])
+            ("DEFINE_RWLOCK" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("active_hooks_lock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [715 733]))                  
+                :type "int")
+                nil [694 734])
+            ("get_hook" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("fs" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("file_system_type" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [772 806]))                  
+                :type ("active_hook" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [736 1041])
+            ("callback" variable
+               (:typemodifiers ("static")
+                :type ("CallbackGenericFunction" type (:type "class") nil nil))
+                nil [1043 1083])
+            ("callbackargs" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "void")
+                nil [1084 1110])
+            ("notify_item" type
+               (:members 
+                  ( ("attempt" variable (:type "int") (reparse-symbol classsubparts) [1134 1146])
+                    ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1148 1171])
+                    ("items" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1173 1196]))                  
+                :type "struct")
+                nil [1112 1199])
+            ("LIST_HEAD" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("notify_items" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1217 1230]))                  
+                :type "int")
+                nil [1200 1231])
+            ("DEFINE_MUTEX" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("notify_items_lock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1252 1270]))                  
+                :type "int")
+                nil [1232 1271])
+            ("notify_path_buffer" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [1272 1308])
+            ("mount_notify_work_func" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("work" variable
+                       (:pointer 1
+                        :type ("work_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1394 1419]))                  
+                :type "void")
+                nil [1359 2315])
+            ("DECLARE_DELAYED_WORK" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("mount_notify_work" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3509 3527])
+                    ("" variable (:type ("mount_notify_work_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3528 3551]))                  
+                :type "int")
+                nil [3481 3552])
+            ("new_read_super" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4595 4619])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4620 4632])
+                    ("silent" variable (:type "int") (reparse-symbol arg-sub-list) [4633 4644]))                  
+                :type ("super_block" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4552 5442])
+            ("enable_hook" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("enable" variable (:type "int") (reparse-symbol arg-sub-list) [6869 6880]))                  
+                :type "int")
+                nil [6846 8241])
+            ("RegisterUsbStorActionCbInternal" function
+               (:pointer 1
+                :arguments 
+                  ( ("function" variable (:type ("CallbackGenericFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8288 8321])
+                    ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8322 8333]))                  
+                :type "void")
+                nil [8250 8421])
+            ("UnregisterUsbStorActionCbIntenral" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8462 8475]))                  
+                :type "void")
+                nil [8423 8536]))          
+      :file "callback.c"
+      :pointmax 8537
+      :fsize 8536
+      :lastmodtime '(22655 12714 230885 415000)
+      :unmatched-syntax nil))
+  :file "!home!qadabr!work!agent!src!core!callback!lin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

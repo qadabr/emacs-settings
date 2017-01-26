@@ -1,0 +1,119 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ASM_X86_TYPES_H" variable (:constant-flag t) nil [34 50])
+            ("asm-generic/types.h" include (:system-flag t) nil [52 82]))          
+      :file "types.h"
+      :pointmax 114
+      :fsize 113
+      :lastmodtime '(22640 13841 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ASM_X86_TYPES_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ASM_X86_BYTEORDER_H" variable (:constant-flag t) nil [38 58])
+            ("linux/byteorder/little_endian.h" include (:system-flag t) nil [60 102]))          
+      :file "byteorder.h"
+      :pointmax 138
+      :fsize 137
+      :lastmodtime '(22640 13838 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ASM_X86_BYTEORDER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("asm/posix_types_64.h" include (:system-flag t) nil [120 153]))          
+      :file "posix_types.h"
+      :pointmax 162
+      :fsize 161
+      :lastmodtime '(22640 13839 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ASM_X86_POSIX_TYPES_64_H" variable (:constant-flag t) nil [43 68])
+            ("__kernel_old_uid_t" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [248 290])
+            ("__kernel_old_gid_t" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [291 333])
+            ("__kernel_old_uid_t" variable (:constant-flag t) nil [342 360])
+            ("__kernel_old_dev_t" type
+               (:typedef ("unsigned long")
+                :type "typedef")
+                nil [381 422])
+            ("__kernel_old_dev_t" variable (:constant-flag t) nil [431 449])
+            ("asm-generic/posix_types.h" include (:system-flag t) nil [470 506]))          
+      :file "posix_types_64.h"
+      :pointmax 547
+      :fsize 546
+      :lastmodtime '(22640 13839 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ASM_X86_POSIX_TYPES_64_H")
+          ("__kernel_old_uid_t" . ((symbol "__kernel_old_uid_t" 361 . 379)))
+          ("__kernel_old_dev_t" . ((symbol "__kernel_old_dev_t" 450 . 468)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ASM_X86_BITSPERLONG_H" variable (:constant-flag t) nil [41 64])
+            ("__BITS_PER_LONG" variable (:constant-flag t) nil [122 137])
+            ("asm-generic/bitsperlong.h" include (:system-flag t) nil [183 219]))          
+      :file "bitsperlong.h"
+      :pointmax 259
+      :fsize 258
+      :lastmodtime '(22640 13838 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ASM_X86_BITSPERLONG_H")
+          ("__BITS_PER_LONG" . ((number "64" 138 . 140)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ASM_X86_SWAB_H" variable (:constant-flag t) nil [33 48])
+            ("linux/types.h" include (:system-flag t) nil [50 74])
+            ("__arch_swab32" function
+               (:arguments 
+                  ( ("val" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116 126]))                  
+                :type ("__u32" type (:type "class") nil nil))
+                nil [96 191])
+            ("__arch_swab32" variable (:constant-flag t) nil [200 213])
+            ("__arch_swab64" function
+               (:arguments 
+                  ( ("val" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [268 278]))                  
+                :type ("__u64" type (:type "class") nil nil))
+                nil [248 595])
+            ("__arch_swab64" variable (:constant-flag t) nil [604 617]))          
+      :file "swab.h"
+      :pointmax 662
+      :fsize 661
+      :lastmodtime '(22640 13840 0 0)
+      :unmatched-syntax '((symbol 236 . 246) (STATIC 229 . 235) (symbol 84 . 94) (STATIC 77 . 83))
+      :lexical-table 
+        '(("__arch_swab32" . ((symbol "__arch_swab32" 214 . 227)))
+          ("_ASM_X86_SWAB_H")
+          ("__arch_swab64" . ((symbol "__arch_swab64" 618 . 631)))
+          )
+))
+  :file "!usr!include!x86_64-linux-gnu!asm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

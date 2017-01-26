@@ -1,0 +1,521 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__RTLERROR_H__" variable (:constant-flag t) nil [119 133])
+            ("" type
+               (:members 
+                  ( ("E_UNSUCCESS" variable
+                       (:constant-flag t
+                        :default-value (616 617)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [602 617])
+                    ("E_INVAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [650 658])
+                    ("E_NOMEM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [697 705])
+                    ("E_IO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [747 752])
+                    ("E_ALREADY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [793 803])
+                    ("E_INPROGRESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [853 866])
+                    ("E_TIMEDOUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [900 911])
+                    ("E_NOIMPL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [959 968])
+                    ("E_CRTHREAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1009 1020])
+                    ("E_CRLOGGER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1058 1069])
+                    ("E_CRFILE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1108 1117])
+                    ("E_NOACCESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1168 1179])
+                    ("E_NOTFOUND" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1219 1230])
+                    ("E_NOTINIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1262 1272])
+                    ("E_INVALIMG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1321 1332])
+                    ("E_BUFFTOOSMALL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1375 1390])
+                    ("E_ENDFILE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1425 1435])
+                    ("E_OVERFLOW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1463 1474])
+                    ("E_OPEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1512 1519])
+                    ("E_NOSPC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1564 1572])
+                    ("E_BUSY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1611 1618])
+                    ("E_FINISHEDEVT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1666 1680])
+                    ("E_EXIST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1734 1742])
+                    ("E_BADFNAME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1784 1795])
+                    ("E_CBSTOP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1840 1849])
+                    ("E_CRCONTEXT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1922 1934])
+                    ("E_MODULEINIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1985 1998])
+                    ("E_MODULELOAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2049 2062])
+                    ("E_PROCLIST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2107 2118])
+                    ("E_NOTSUPPORTED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2170 2185])
+                    ("E_PBUF_CREATE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2253 2267])
+                    ("E_PCB_CREATE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2300 2313])
+                    ("E_CRNETCONN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2346 2358])
+                    ("E_SNDQUEUEFULL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2408 2423])
+                    ("E_ADDRINUSE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2464 2476])
+                    ("E_NOPORTS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2519 2529])
+                    ("E_NOROUTE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2586 2596])
+                    ("E_ADDRDATA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2653 2664])
+                    ("E_WOULDBLOCK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2723 2736])
+                    ("E_CONABORT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2778 2789])
+                    ("E_CONRESET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2832 2843])
+                    ("E_SENDDATA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2878 2889])
+                    ("E_CONCLOSED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2945 2957])
+                    ("E_NOTCONN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2990 3000])
+                    ("E_CRSOCK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3047 3056])
+                    ("E_CRDENTRYCACHE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3117 3133])
+                    ("E_INITNAMEI" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3188 3200])
+                    ("E_INITBDEV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3264 3275])
+                    ("E_INITFSTYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3365 3378])
+                    ("E_INITINODE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3455 3467])
+                    ("E_INITMOUNT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3560 3572])
+                    ("E_INITSB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3663 3672])
+                    ("E_INITFILEOBJ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3770 3784])
+                    ("E_STARTSYNC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3882 3894])
+                    ("E_NOENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3969 3977])
+                    ("E_NOTDIR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4028 4037])
+                    ("E_LOOP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4091 4098])
+                    ("E_NOFSTYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4192 4203])
+                    ("E_NOTFORMAT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4270 4282])
+                    ("E_NODEV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4341 4349])
+                    ("E_ISDIR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4399 4407])
+                    ("E_BADF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4490 4497])
+                    ("E_RKFSP_NODEINVAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4568 4586])
+                    ("E_RKFSP_BADNODETYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4624 4644])
+                    ("E_RECEXSIST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4673 4685])
+                    ("E_DIRNOTEMPTY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4733 4747])
+                    ("E_BTREEOPENFAIL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4808 4824])
+                    ("E_BLOCK_BROKEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4887 4902])
+                    ("E_BDEV_INITBITMAP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4951 4969])
+                    ("E_BDEV_INITHEAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5015 5031])
+                    ("ERROR_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5086 5096]))                  
+                :type "enum")
+                nil [574 5099])
+            ("errstr" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :type "char")
+                nil [5101 5133])
+            ("ERR_ABS" variable (:constant-flag t) nil [5142 5149])
+            ("GET_ERROR_LABEL" variable (:constant-flag t) nil [5196 5211])
+            ("ERR_TO_PTR" variable (:constant-flag t) nil [5296 5306])
+            ("PTR_TO_ERR" variable (:constant-flag t) nil [5342 5352])
+            ("IS_ERR_PTR" variable (:constant-flag t) nil [5388 5398])
+            ("RT_ERROR" variable (:constant-flag t) nil [5453 5461])
+            ("IS_CRITICAL_NET_ERROR" variable (:constant-flag t) nil [5488 5509]))          
+      :file "rtlerror.h"
+      :pointmax 5800
+      :fsize 8264
+      :lastmodtime '(22652 44347 857442 387000)
+      :unmatched-syntax '((close-paren 5097 . 5098) (punctuation 5095 . 5096) (symbol 5086 . 5095) (punctuation 5030 . 5031) (symbol 5015 . 5030) (punctuation 4968 . 4969) (symbol 4951 . 4968) (punctuation 4901 . 4902) (symbol 4887 . 4901) (punctuation 4823 . 4824) (symbol 4808 . 4823) (punctuation 4746 . 4747) (symbol 4733 . 4746) (punctuation 4684 . 4685) (symbol 4673 . 4684) (punctuation 4643 . 4644) (symbol 4624 . 4643) (punctuation 4585 . 4586) (symbol 4568 . 4585) (punctuation 4496 . 4497) (symbol 4490 . 4496) (punctuation 4406 . 4407) (symbol 4399 . 4406) (punctuation 4348 . 4349) (symbol 4341 . 4348) (punctuation 4281 . 4282) (symbol 4270 . 4281) (punctuation 4202 . 4203) (symbol 4192 . 4202) (punctuation 4097 . 4098) (symbol 4091 . 4097) (punctuation 4036 . 4037) (symbol 4028 . 4036) (punctuation 3976 . 3977) (symbol 3969 . 3976) (punctuation 3893 . 3894) (symbol 3882 . 3893) (punctuation 3783 . 3784) (symbol 3770 . 3783) (punctuation 3671 . 3672) (symbol 3663 . 3671) (punctuation 3571 . 3572) (symbol 3560 . 3571) (punctuation 3466 . 3467) (symbol 3455 . 3466) (punctuation 3377 . 3378) (symbol 3365 . 3377) (punctuation 3274 . 3275) (symbol 3264 . 3274) (punctuation 3199 . 3200) (symbol 3188 . 3199) (punctuation 3132 . 3133) (symbol 3117 . 3132) (punctuation 3055 . 3056) (symbol 3047 . 3055) (punctuation 2999 . 3000) (symbol 2990 . 2999) (punctuation 2956 . 2957) (symbol 2945 . 2956) (punctuation 2888 . 2889) (symbol 2878 . 2888) (punctuation 2842 . 2843) (symbol 2832 . 2842) (punctuation 2788 . 2789) (symbol 2778 . 2788) (punctuation 2735 . 2736) (symbol 2723 . 2735) (punctuation 2663 . 2664) (symbol 2653 . 2663) (punctuation 2595 . 2596) (symbol 2586 . 2595) (punctuation 2528 . 2529) (symbol 2519 . 2528) (punctuation 2475 . 2476) (symbol 2464 . 2475) (punctuation 2422 . 2423) (symbol 2408 . 2422) (punctuation 2357 . 2358) (symbol 2346 . 2357) (punctuation 2312 . 2313) (symbol 2300 . 2312) (punctuation 2266 . 2267) (symbol 2253 . 2266) (punctuation 2184 . 2185) (symbol 2170 . 2184) (punctuation 2117 . 2118) (symbol 2107 . 2117) (punctuation 2061 . 2062) (symbol 2049 . 2061) (punctuation 1997 . 1998) (symbol 1985 . 1997) (punctuation 1933 . 1934) (symbol 1922 . 1933) (punctuation 1848 . 1849) (symbol 1840 . 1848) (punctuation 1794 . 1795) (symbol 1784 . 1794) (punctuation 1741 . 1742) (symbol 1734 . 1741) (punctuation 1679 . 1680) (symbol 1666 . 1679) (punctuation 1617 . 1618) (symbol 1611 . 1617) (punctuation 1571 . 1572) (symbol 1564 . 1571) (punctuation 1518 . 1519) (symbol 1512 . 1518) (punctuation 1473 . 1474) (symbol 1463 . 1473) (punctuation 1434 . 1435) (symbol 1425 . 1434) (punctuation 1389 . 1390) (symbol 1375 . 1389) (punctuation 1331 . 1332) (symbol 1321 . 1331) (punctuation 1271 . 1272) (symbol 1262 . 1271) (punctuation 1229 . 1230) (symbol 1219 . 1229) (punctuation 1178 . 1179) (symbol 1168 . 1178) (punctuation 1116 . 1117) (symbol 1108 . 1116) (punctuation 1068 . 1069) (symbol 1058 . 1068) (punctuation 1019 . 1020) (symbol 1009 . 1019) (punctuation 967 . 968) (symbol 959 . 967) (punctuation 910 . 911) (symbol 900 . 910) (punctuation 865 . 866) (symbol 853 . 865) (punctuation 802 . 803) (symbol 793 . 802) (punctuation 751 . 752) (symbol 747 . 751) (punctuation 704 . 705) (symbol 697 . 704) (punctuation 657 . 658) (symbol 650 . 657) (punctuation 617 . 618) (number 616 . 617) (punctuation 614 . 615) (symbol 602 . 613) (close-paren 5097 . 5098) (punctuation 5095 . 5096) (symbol 5086 . 5095) (punctuation 5030 . 5031) (symbol 5015 . 5030) (punctuation 4968 . 4969) (symbol 4951 . 4968) (punctuation 4901 . 4902) (symbol 4887 . 4901) (punctuation 4823 . 4824) (symbol 4808 . 4823) (punctuation 4746 . 4747) (symbol 4733 . 4746) (punctuation 4684 . 4685) (symbol 4673 . 4684) (punctuation 4643 . 4644) (symbol 4624 . 4643) (punctuation 4585 . 4586) (symbol 4568 . 4585) (punctuation 4496 . 4497) (symbol 4490 . 4496) (punctuation 4406 . 4407) (symbol 4399 . 4406) (punctuation 4348 . 4349) (symbol 4341 . 4348) (punctuation 4281 . 4282) (symbol 4270 . 4281) (punctuation 4202 . 4203) (symbol 4192 . 4202) (punctuation 4097 . 4098) (symbol 4091 . 4097) (punctuation 4036 . 4037) (symbol 4028 . 4036) (punctuation 3976 . 3977) (symbol 3969 . 3976) (punctuation 3893 . 3894) (symbol 3882 . 3893) (punctuation 3783 . 3784) (symbol 3770 . 3783) (punctuation 3671 . 3672) (symbol 3663 . 3671) (punctuation 3571 . 3572) (symbol 3560 . 3571) (punctuation 3466 . 3467) (symbol 3455 . 3466) (punctuation 3377 . 3378) (symbol 3365 . 3377) (punctuation 3274 . 3275) (symbol 3264 . 3274) (punctuation 3199 . 3200) (symbol 3188 . 3199) (punctuation 3132 . 3133) (symbol 3117 . 3132) (punctuation 3055 . 3056) (symbol 3047 . 3055) (punctuation 2999 . 3000) (symbol 2990 . 2999) (punctuation 2956 . 2957) (symbol 2945 . 2956) (punctuation 2888 . 2889) (symbol 2878 . 2888) (punctuation 2842 . 2843) (symbol 2832 . 2842) (punctuation 2788 . 2789) (symbol 2778 . 2788) (punctuation 2735 . 2736) (symbol 2723 . 2735) (punctuation 2663 . 2664) (symbol 2653 . 2663) (punctuation 2595 . 2596) (symbol 2586 . 2595) (punctuation 2528 . 2529) (symbol 2519 . 2528) (punctuation 2475 . 2476) (symbol 2464 . 2475) (punctuation 2422 . 2423) (symbol 2408 . 2422) (punctuation 2357 . 2358) (symbol 2346 . 2357) (punctuation 2312 . 2313) (symbol 2300 . 2312) (punctuation 2266 . 2267) (symbol 2253 . 2266) (punctuation 2184 . 2185) (symbol 2170 . 2184) (punctuation 2117 . 2118) (symbol 2107 . 2117) (punctuation 2061 . 2062) (symbol 2049 . 2061) (punctuation 1997 . 1998) (symbol 1985 . 1997) (punctuation 1933 . 1934) (symbol 1922 . 1933) (punctuation 1848 . 1849) (symbol 1840 . 1848) (punctuation 1794 . 1795) (symbol 1784 . 1794) (punctuation 1741 . 1742) (symbol 1734 . 1741) (punctuation 1679 . 1680) (symbol 1666 . 1679) (punctuation 1617 . 1618) (symbol 1611 . 1617) (punctuation 1571 . 1572) (symbol 1564 . 1571) (punctuation 1518 . 1519) (symbol 1512 . 1518) (punctuation 1473 . 1474) (symbol 1463 . 1473) (punctuation 1434 . 1435) (symbol 1425 . 1434) (punctuation 1389 . 1390) (symbol 1375 . 1389) (punctuation 1331 . 1332) (symbol 1321 . 1331) (punctuation 1271 . 1272) (symbol 1262 . 1271) (punctuation 1229 . 1230) (symbol 1219 . 1229) (punctuation 1178 . 1179) (symbol 1168 . 1178) (punctuation 1116 . 1117) (symbol 1108 . 1116) (punctuation 1068 . 1069) (symbol 1058 . 1068) (punctuation 1019 . 1020) (symbol 1009 . 1019) (punctuation 967 . 968) (symbol 959 . 967) (punctuation 910 . 911) (symbol 900 . 910) (punctuation 865 . 866) (symbol 853 . 865) (punctuation 802 . 803) (symbol 793 . 802) (punctuation 751 . 752) (symbol 747 . 751) (punctuation 704 . 705) (symbol 697 . 704) (punctuation 657 . 658) (symbol 650 . 657) (punctuation 617 . 618) (number 616 . 617) (punctuation 614 . 615) (symbol 602 . 613))
+      :lexical-table 
+        '(("ERR_TO_PTR" (spp-arg-list ("_err") 5306 . 5312) . ((semantic-list "((void*)(ptr_t)_err)" 5313 . 5333)))
+          ("__RTLERROR_H__")
+          ("PTR_TO_ERR" (spp-arg-list ("_ptr") 5352 . 5358) . ((semantic-list "((int32)(ptr_t)_ptr)" 5359 . 5379)))
+          ("IS_ERR_PTR" (spp-arg-list ("_ptr") 5398 . 5404) . ((semantic-list "(((ptr_t)(_ptr)) >= (ptr_t)-ERROR_MAX)" 5405 . 5443)))
+          ("IS_CRITICAL_NET_ERROR" (spp-arg-list ("_err") 5509 . 5515) . ((semantic-list "(((_err) < -E_ADDRDATA) && ((_err) >= -E_CONCLOSED))" 5519 . 5571)))
+          ("GET_ERROR_LABEL" (spp-arg-list ("err") 5211 . 5216) . ((semantic-list "(errstr[ERR_ABS(err)] ? errstr[ERR_ABS(err)] : \"unknown error value\")" 5217 . 5286)))
+          ("RT_ERROR" (spp-arg-list ("err") 5461 . 5466) . ((semantic-list "((err) < 0)" 5467 . 5478)))
+          ("ERR_ABS" (spp-arg-list ("err") 5149 . 5154) . ((semantic-list "(((err) < 0) ? (-(err)) : (err))" 5155 . 5187)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("RTLIB" variable (:constant-flag t) nil [96 101])
+            ("RTLIB_LOGGER" variable (:constant-flag t) nil [110 122])
+            ("rtlib/rtlib.h" include (:system-flag t) nil [124 148])
+            ("CONFIG_RTLOGGER_BUFFER_SIZE" variable (:constant-flag t) nil [158 185])
+            ("_RtLoggerPriv" type
+               (:members 
+                  ( ("out" variable (:type ("RtLoggerOut" type (:type "class") nil nil)) (reparse-symbol classsubparts) [225 245])
+                    ("lvl" variable
+                       (:typemodifiers ("volatile")
+                        :type ("int32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [247 267])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("RtFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [269 290])
+                    ("fileSize" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [292 317])
+                    ("filesCnt" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [319 344]))                  
+                :type "struct")
+                nil [193 360])
+            ("RtLoggerPriv" type
+               (:typedef ("_RtLoggerPriv" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [193 360])
+            ("_RtLogFileEntry" type
+               (:members 
+                  ( ("link" variable (:type ("RtListEntry" type (:type "class") nil nil)) (reparse-symbol classsubparts) [396 413])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("RtFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [415 432])
+                    ("bufSize" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [434 454])
+                    ("buf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [456 501]))                  
+                :type "struct")
+                nil [362 519])
+            ("RtLogFileEntry" type
+               (:typedef ("_RtLogFileEntry" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [362 519])
+            ("g_fileEntriesList" variable
+               (:typemodifiers ("static")
+                :type ("RtListHead" type (:type "class") nil nil))
+                nil [521 557])
+            ("g_fileEntriesListLock" variable
+               (:typemodifiers ("static")
+                :type ("RtLock" type (:type "class") nil nil))
+                nil [558 598])
+            ("g_dumpToFileTimer" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("RtTimer" type (:type "class") nil nil))
+                nil [599 642])
+            ("RtLogCreateNewFile" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("log" variable
+                       (:pointer 1
+                        :type ("RtLogger" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [676 690]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [644 1248])
+            ("RtLogCreate" function
+               (:pointer 1
+                :arguments 
+                  ( ("lvl" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1272 1283])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("RtLoggerOut" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1284 1301]))                  
+                :type ("RtLogger" type (:type "class") nil nil))
+                nil [1250 1947])
+            ("RtLoggerSetSettings" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("log" variable
+                       (:pointer 1
+                        :type ("RtLogger" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1982 1996])
+                    ("tuneName" variable (:type ("RtLogSettingsType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2023 2050])
+                    ("tuneVal" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2077 2091])
+                    ("tuneLen" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2118 2133]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [1949 2455])
+            ("RtLoggerGetSettings" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("log" variable
+                       (:pointer 1
+                        :type ("RtLogger" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2490 2504])
+                    ("tuneName" variable (:type ("RtLogSettingsType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2531 2558])
+                    ("tuneVal" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2585 2599])
+                    ("tuneLen" variable
+                       (:pointer 1
+                        :type ("uint32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2626 2642]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [2457 3287])
+            ("RtLogDestroyIntern" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("log" variable
+                       (:pointer 1
+                        :type ("RtLogger" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3320 3334]))                  
+                :type "void")
+                nil [3289 3471])
+            ("RtLogPrintIntern" function
+               (:arguments 
+                  ( ("log" variable
+                       (:pointer 1
+                        :type ("RtLogger" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3495 3509])
+                    ("lvl" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3532 3543])
+                    ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3566 3583])
+                    ("line" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3606 3617])
+                    ("func" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3640 3657])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3680 3696])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [3719 3723]))                  
+                :type "void")
+                nil [3473 6742])
+            ("RtLogDumpToFile" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tmr" variable
+                       (:pointer 1
+                        :type ("RtTimer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6772 6785])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6786 6796]))                  
+                :type "void")
+                nil [6744 7454])
+            ("RtLoggersInit" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7476 7486]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [7456 7849])
+            ("RtLoggersDeinit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7872 7877]))                  
+                :type "void")
+                nil [7851 8025])
+            ("g_rtLoggerIfaces" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	RtLoggerSetSettings,
+	RtLoggerGetSettings,
+	RtLogPrintIntern
+}"
+                :type ("RtLoggerIfaces" type (:type "class") nil nil))
+                nil [8027 8134]))          
+      :file "rtllogger.c"
+      :pointmax 8304
+      :fsize 8458
+      :lastmodtime '(22652 44347 857442 387000)
+      :unmatched-syntax '((semantic-list 8154 . 8303) (symbol 8136 . 8154) (semantic-list 8263 . 8284) (semantic-list 8228 . 8242) (SIZEOF 8222 . 8228) (punctuation 8184 . 8185) (symbol 347 . 359) (close-paren 345 . 346) (symbol 347 . 359) (close-paren 345 . 346) (symbol 504 . 518) (close-paren 502 . 503) (punctuation 500 . 501) (close-paren 499 . 500) (symbol 472 . 499) (open-paren 471 . 472) (symbol 468 . 471) (CHAR 456 . 460) (symbol 504 . 518) (close-paren 502 . 503) (symbol 504 . 518) (close-paren 502 . 503) (punctuation 500 . 501) (close-paren 499 . 500) (symbol 472 . 499) (open-paren 471 . 472) (symbol 468 . 471) (CHAR 456 . 460) (punctuation 1245 . 1246) (number 1244 . 1245) (RETURN 1237 . 1243) (close-paren 1234 . 1235) (punctuation 1231 . 1232) (symbol 1227 . 1231) (punctuation 1225 . 1226) (symbol 1220 . 1224) (punctuation 1219 . 1220) (punctuation 1218 . 1219) (symbol 1214 . 1218) (semantic-list 1170 . 1211) (semantic-list 1149 . 1169) (IF 1146 . 1148) (open-paren 1080 . 1081) (ELSE 1075 . 1079) (close-paren 1073 . 1074) (punctuation 1070 . 1071) (semantic-list 1064 . 1070) (symbol 1054 . 1064) (RETURN 1047 . 1053) (open-paren 1043 . 1044) (close-paren 1041 . 1042) (semantic-list 1035 . 1041) (symbol 1025 . 1035) (open-paren 1024 . 1025) (IF 1021 . 1023) (punctuation 1018 . 1019) (close-paren 1017 . 1018) (symbol 1005 . 1017) (punctuation 1003 . 1004) (symbol 986 . 1002) (punctuation 984 . 985) (symbol 979 . 984) (open-paren 978 . 979) (symbol 966 . 978) (punctuation 964 . 965) (symbol 959 . 963) (punctuation 956 . 957) (close-paren 955 . 956) (symbol 947 . 955) (punctuation 946 . 947) (punctuation 945 . 946) (symbol 941 . 945) (punctuation 939 . 940) (symbol 931 . 939) (punctuation 930 . 931) (symbol 927 . 930) (punctuation 926 . 927) (punctuation 925 . 926) (symbol 921 . 925) (punctuation 919 . 920) (symbol 909 . 919) (punctuation 908 . 909) (symbol 905 . 908) (punctuation 904 . 905) (punctuation 903 . 904) (symbol 899 . 903) (punctuation 885 . 886) (string 872 . 885) (punctuation 870 . 871) (semantic-list 863 . 870) (SIZEOF 857 . 863) (punctuation 855 . 856) (symbol 850 . 855) (open-paren 849 . 850) (symbol 839 . 849) (punctuation 836 . 837) (number 835 . 836) (punctuation 833 . 834) (punctuation 832 . 833) (symbol 823 . 831) (punctuation 822 . 823) (punctuation 821 . 822) (symbol 817 . 821) (punctuation 812 . 813) (close-paren 811 . 812) (symbol 784 . 811) (open-paren 783 . 784) (symbol 778 . 783) (CHAR 764 . 768) (punctuation 733 . 734) (close-paren 732 . 733) (symbol 729 . 732) (open-paren 728 . 729) (symbol 715 . 728) (punctuation 713 . 714) (symbol 708 . 712) (punctuation 706 . 707) (symbol 694 . 706) (punctuation 1245 . 1246) (number 1244 . 1245) (RETURN 1237 . 1243) (semantic-list 1080 . 1235) (ELSE 1075 . 1079) (semantic-list 1043 . 1074) (semantic-list 1024 . 1042) (IF 1021 . 1023) (punctuation 1018 . 1019) (semantic-list 978 . 1018) (symbol 966 . 978) (punctuation 964 . 965) (symbol 959 . 963) (punctuation 956 . 957) (semantic-list 849 . 956) (symbol 839 . 849) (punctuation 836 . 837) (number 835 . 836) (punctuation 833 . 834) (punctuation 832 . 833) (symbol 823 . 831) (punctuation 822 . 823) (punctuation 821 . 822) (symbol 817 . 821) (punctuation 1245 . 1246) (number 1244 . 1245) (RETURN 1237 . 1243) (close-paren 1234 . 1235) (punctuation 1231 . 1232) (symbol 1227 . 1231) (punctuation 1225 . 1226) (symbol 1220 . 1224) (punctuation 1219 . 1220) (punctuation 1218 . 1219) (symbol 1214 . 1218) (close-paren 1210 . 1211) (punctuation 1206 . 1207) (close-paren 1205 . 1206) (symbol 1201 . 1205) (punctuation 1200 . 1201) (punctuation 1199 . 1200) (symbol 1195 . 1199) (open-paren 1194 . 1195) (symbol 1175 . 1194) (open-paren 1170 . 1171) (close-paren 1168 . 1169) (symbol 1164 . 1168) (punctuation 1162 . 1163) (punctuation 1161 . 1162) (symbol 1156 . 1160) (punctuation 1155 . 1156) (punctuation 1154 . 1155) (symbol 1150 . 1154) (open-paren 1149 . 1150) (IF 1146 . 1148) (open-paren 1080 . 1081) (ELSE 1075 . 1079) (close-paren 1073 . 1074) (punctuation 1070 . 1071) (close-paren 1069 . 1070) (symbol 1065 . 1069) (open-paren 1064 . 1065) (symbol 1054 . 1064) (RETURN 1047 . 1053) (open-paren 1043 . 1044) (close-paren 1041 . 1042) (close-paren 1040 . 1041) (symbol 1036 . 1040) (open-paren 1035 . 1036) (symbol 1025 . 1035) (open-paren 1024 . 1025) (IF 1021 . 1023) (punctuation 1018 . 1019) (close-paren 1017 . 1018) (symbol 1005 . 1017) (punctuation 1003 . 1004) (symbol 986 . 1002) (punctuation 984 . 985) (symbol 979 . 984) (open-paren 978 . 979) (symbol 966 . 978) (punctuation 964 . 965) (symbol 959 . 963) (punctuation 956 . 957) (close-paren 955 . 956) (symbol 947 . 955) (punctuation 946 . 947) (punctuation 945 . 946) (symbol 941 . 945) (punctuation 939 . 940) (symbol 931 . 939) (punctuation 930 . 931) (symbol 927 . 930) (punctuation 926 . 927) (punctuation 925 . 926) (symbol 921 . 925) (punctuation 919 . 920) (symbol 909 . 919) (punctuation 908 . 909) (symbol 905 . 908) (punctuation 904 . 905) (punctuation 903 . 904) (symbol 899 . 903) (punctuation 885 . 886) (string 872 . 885) (punctuation 870 . 871) (close-paren 869 . 870) (symbol 864 . 869) (open-paren 863 . 864) (SIZEOF 857 . 863) (punctuation 855 . 856) (symbol 850 . 855) (open-paren 849 . 850) (symbol 839 . 849) (punctuation 836 . 837) (number 835 . 836) (punctuation 833 . 834) (punctuation 832 . 833) (symbol 823 . 831) (punctuation 822 . 823) (punctuation 821 . 822) (symbol 817 . 821) (punctuation 812 . 813) (close-paren 811 . 812) (symbol 784 . 811) (open-paren 783 . 784) (symbol 778 . 783) (CHAR 764 . 768) (punctuation 733 . 734) (close-paren 732 . 733) (symbol 729 . 732) (open-paren 728 . 729) (symbol 715 . 728) (punctuation 713 . 714) (symbol 708 . 712) (punctuation 706 . 707) (symbol 694 . 706) (punctuation 1944 . 1945) (symbol 1941 . 1944) (RETURN 1934 . 1940) (semantic-list 1450 . 1930) (semantic-list 1431 . 1449) (IF 1428 . 1430) (punctuation 1425 . 1426) (semantic-list 1405 . 1425) (symbol 1392 . 1405) (punctuation 1390 . 1391) (symbol 1386 . 1389) (punctuation 1944 . 1945) (symbol 1941 . 1944) (RETURN 1934 . 1940) (close-paren 1929 . 1930) (punctuation 1926 . 1927) (close-paren 1925 . 1926) (symbol 1922 . 1925) (open-paren 1921 . 1922) (symbol 1904 . 1921) (close-paren 1900 . 1901) (close-paren 1896 . 1897) (punctuation 1891 . 1892) (close-paren 1890 . 1891) (symbol 1887 . 1890) (open-paren 1886 . 1887) (symbol 1876 . 1886) (RETURN 1869 . 1875) (punctuation 1863 . 1864) (close-paren 1862 . 1863) (symbol 1859 . 1862) (open-paren 1858 . 1859) (symbol 1846 . 1858) (open-paren 1840 . 1841) (close-paren 1838 . 1839) (close-paren 1837 . 1838) (symbol 1834 . 1837) (open-paren 1833 . 1834) (symbol 1825 . 1833) (open-paren 1824 . 1825) (IF 1821 . 1823) (punctuation 1816 . 1817) (close-paren 1815 . 1816) (symbol 1812 . 1815) (open-paren 1811 . 1812) (symbol 1793 . 1811) (punctuation 1791 . 1792) (symbol 1787 . 1790) (punctuation 1782 . 1783) (symbol 1778 . 1782) (punctuation 1776 . 1777) (symbol 1771 . 1775) (punctuation 1770 . 1771) (punctuation 1769 . 1770) (symbol 1765 . 1769) (punctuation 1760 . 1761) (number 1759 . 1760) (punctuation 1757 . 1758) (symbol 1748 . 1756) (punctuation 1747 . 1748) (punctuation 1746 . 1747) (symbol 1742 . 1746) (punctuation 1737 . 1738) (number 1736 . 1737) (punctuation 1734 . 1735) (symbol 1725 . 1733) (punctuation 1724 . 1725) (punctuation 1723 . 1724) (symbol 1719 . 1723) (punctuation 1714 . 1715) (close-paren 1713 . 1714) (symbol 1709 . 1713) (punctuation 1707 . 1708) (punctuation 1706 . 1707) (symbol 1695 . 1705) (punctuation 1694 . 1695) (symbol 1691 . 1694) (punctuation 1690 . 1691) (punctuation 1689 . 1690) (symbol 1685 . 1689) (open-paren 1684 . 1685) (symbol 1676 . 1684) (punctuation 1671 . 1672) (close-paren 1670 . 1671) (symbol 1666 . 1670) (punctuation 1664 . 1665) (punctuation 1663 . 1664) (symbol 1654 . 1662) (punctuation 1653 . 1654) (symbol 1650 . 1653) (punctuation 1649 . 1650) (punctuation 1648 . 1649) (symbol 1644 . 1648) (open-paren 1643 . 1644) (symbol 1635 . 1643) (open-paren 1630 . 1631) (close-paren 1628 . 1629) (symbol 1613 . 1628) (punctuation 1611 . 1612) (symbol 1606 . 1610) (punctuation 1605 . 1606) (symbol 1602 . 1605) (punctuation 1601 . 1602) (punctuation 1600 . 1601) (symbol 1596 . 1600) (open-paren 1595 . 1596) (IF 1592 . 1594) (punctuation 1585 . 1586) (close-paren 1584 . 1585) (close-paren 1583 . 1584) (symbol 1580 . 1583) (punctuation 1579 . 1580) (punctuation 1578 . 1579) (symbol 1574 . 1578) (open-paren 1573 . 1574) (SIZEOF 1567 . 1573) (punctuation 1565 . 1566) (symbol 1562 . 1565) (punctuation 1560 . 1561) (symbol 1557 . 1560) (punctuation 1556 . 1557) (punctuation 1555 . 1556) (symbol 1551 . 1555) (punctuation 1550 . 1551) (open-paren 1549 . 1550) (symbol 1543 . 1549) (punctuation 1539 . 1540) (close-paren 1538 . 1539) (close-paren 1537 . 1538) (symbol 1534 . 1537) (open-paren 1533 . 1534) (SIZEOF 1527 . 1533) (punctuation 1525 . 1526) (symbol 1522 . 1525) (punctuation 1521 . 1522) (punctuation 1519 . 1520) (symbol 1505 . 1519) (punctuation 1503 . 1504) (symbol 1500 . 1503) (open-paren 1499 . 1500) (symbol 1483 . 1499) (punctuation 1479 . 1480) (close-paren 1478 . 1479) (symbol 1475 . 1478) (open-paren 1474 . 1475) (symbol 1461 . 1474) (punctuation 1459 . 1460) (symbol 1454 . 1458) (open-paren 1450 . 1451) (close-paren 1448 . 1449) (close-paren 1447 . 1448) (symbol 1444 . 1447) (open-paren 1443 . 1444) (symbol 1433 . 1443) (punctuation 1432 . 1433) (open-paren 1431 . 1432) (IF 1428 . 1430) (punctuation 1425 . 1426) (close-paren 1424 . 1425) (symbol 1406 . 1424) (open-paren 1405 . 1406) (symbol 1392 . 1405) (punctuation 1390 . 1391) (symbol 1386 . 1389) (punctuation 2452 . 2453) (number 2451 . 2452) (RETURN 2444 . 2450) (close-paren 2441 . 2442) (punctuation 2438 . 2439) (BREAK 2433 . 2438) (punctuation 2428 . 2429) (DEFAULT 2421 . 2428) (punctuation 2417 . 2418) (semantic-list 2414 . 2417) (symbol 2406 . 2414) (punctuation 2401 . 2402) (symbol 2387 . 2401) (CASE 2382 . 2386) (punctuation 2374 . 2375) (BREAK 2369 . 2374) (punctuation 2364 . 2365) (semantic-list 2347 . 2364) (symbol 2336 . 2347) (punctuation 2331 . 2332) (symbol 2324 . 2331) (semantic-list 2315 . 2324) (punctuation 2314 . 2315) (punctuation 2312 . 2313) (symbol 2308 . 2311) (punctuation 2303 . 2304) (symbol 2289 . 2303) (CASE 2284 . 2288) (open-paren 2280 . 2281) (close-paren 2278 . 2279) (symbol 2270 . 2278) (open-paren 2269 . 2270) (SWITCH 2262 . 2268) (close-paren 2257 . 2258) (punctuation 2254 . 2255) (symbol 2247 . 2254) (punctuation 2246 . 2247) (RETURN 2239 . 2245) (open-paren 2235 . 2236) (close-paren 2233 . 2234) (number 2232 . 2233) (punctuation 2230 . 2231) (punctuation 2229 . 2230) (symbol 2221 . 2228) (punctuation 2219 . 2220) (punctuation 2218 . 2219) (symbol 2213 . 2217) (punctuation 2211 . 2212) (punctuation 2210 . 2211) (symbol 2202 . 2209) (open-paren 2201 . 2202) (IF 2198 . 2200) (punctuation 2176 . 2177) (close-paren 2175 . 2176) (symbol 2172 . 2175) (open-paren 2171 . 2172) (symbol 2158 . 2171) (punctuation 2156 . 2157) (symbol 2151 . 2155) (punctuation 2149 . 2150) (symbol 2137 . 2149) (punctuation 2452 . 2453) (number 2451 . 2452) (RETURN 2444 . 2450) (semantic-list 2280 . 2442) (semantic-list 2269 . 2279) (SWITCH 2262 . 2268) (semantic-list 2235 . 2258) (semantic-list 2201 . 2234) (IF 2198 . 2200) (punctuation 2452 . 2453) (number 2451 . 2452) (RETURN 2444 . 2450) (close-paren 2441 . 2442) (punctuation 2438 . 2439) (BREAK 2433 . 2438) (punctuation 2428 . 2429) (DEFAULT 2421 . 2428) (punctuation 2417 . 2418) (close-paren 2416 . 2417) (number 2415 . 2416) (open-paren 2414 . 2415) (symbol 2406 . 2414) (punctuation 2401 . 2402) (symbol 2387 . 2401) (CASE 2382 . 2386) (punctuation 2374 . 2375) (BREAK 2369 . 2374) (punctuation 2364 . 2365) (close-paren 2363 . 2364) (symbol 2360 . 2363) (punctuation 2358 . 2359) (symbol 2355 . 2358) (punctuation 2354 . 2355) (punctuation 2353 . 2354) (symbol 2349 . 2353) (punctuation 2348 . 2349) (open-paren 2347 . 2348) (symbol 2336 . 2347) (punctuation 2331 . 2332) (symbol 2324 . 2331) (close-paren 2323 . 2324) (punctuation 2322 . 2323) (symbol 2316 . 2322) (open-paren 2315 . 2316) (punctuation 2314 . 2315) (punctuation 2312 . 2313) (symbol 2308 . 2311) (punctuation 2303 . 2304) (symbol 2289 . 2303) (CASE 2284 . 2288) (open-paren 2280 . 2281) (close-paren 2278 . 2279) (symbol 2270 . 2278) (open-paren 2269 . 2270) (SWITCH 2262 . 2268) (close-paren 2257 . 2258) (punctuation 2254 . 2255) (symbol 2247 . 2254) (punctuation 2246 . 2247) (RETURN 2239 . 2245) (open-paren 2235 . 2236) (close-paren 2233 . 2234) (number 2232 . 2233) (punctuation 2230 . 2231) (punctuation 2229 . 2230) (symbol 2221 . 2228) (punctuation 2219 . 2220) (punctuation 2218 . 2219) (symbol 2213 . 2217) (punctuation 2211 . 2212) (punctuation 2210 . 2211) (symbol 2202 . 2209) (open-paren 2201 . 2202) (IF 2198 . 2200) (punctuation 2176 . 2177) (close-paren 2175 . 2176) (symbol 2172 . 2175) (open-paren 2171 . 2172) (symbol 2158 . 2171) (punctuation 2156 . 2157) (symbol 2151 . 2155) (punctuation 2149 . 2150) (symbol 2137 . 2149) (punctuation 3284 . 3285) (number 3283 . 3284) (RETURN 3276 . 3282) (close-paren 3273 . 3274) (punctuation 3270 . 3271) (BREAK 3265 . 3270) (punctuation 3260 . 3261) (semantic-list 3257 . 3260) (symbol 3249 . 3257) (punctuation 3244 . 3245) (symbol 3230 . 3244) (CASE 3225 . 3229) (punctuation 3217 . 3218) (BREAK 3212 . 3217) (punctuation 3207 . 3208) (semantic-list 3199 . 3207) (SIZEOF 3193 . 3199) (punctuation 3191 . 3192) (symbol 3183 . 3190) (punctuation 3182 . 3183) (punctuation 3177 . 3178) (symbol 3173 . 3177) (punctuation 3172 . 3173) (symbol 3169 . 3172) (punctuation 3168 . 3169) (punctuation 3167 . 3168) (symbol 3163 . 3167) (punctuation 3161 . 3162) (symbol 3153 . 3160) (semantic-list 3144 . 3153) (punctuation 3143 . 3144) (punctuation 3138 . 3139) (symbol 3123 . 3138) (CASE 3118 . 3122) (punctuation 3110 . 3111) (BREAK 3105 . 3110) (punctuation 3100 . 3101) (semantic-list 3093 . 3100) (SIZEOF 3087 . 3093) (punctuation 3085 . 3086) (symbol 3077 . 3084) (punctuation 3076 . 3077) (punctuation 3071 . 3072) (symbol 3061 . 3071) (punctuation 3060 . 3061) (symbol 3057 . 3060) (punctuation 3056 . 3057) (punctuation 3055 . 3056) (symbol 3051 . 3055) (punctuation 3049 . 3050) (semantic-list 3039 . 3048) (semantic-list 3031 . 3039) (punctuation 3030 . 3031) (punctuation 3025 . 3026) (symbol 3008 . 3025) (CASE 3003 . 3007) (punctuation 2995 . 2996) (BREAK 2990 . 2995) (punctuation 2985 . 2986) (semantic-list 2978 . 2985) (SIZEOF 2972 . 2978) (punctuation 2970 . 2971) (symbol 2962 . 2969) (punctuation 2961 . 2962) (punctuation 2956 . 2957) (symbol 2948 . 2956) (punctuation 2947 . 2948) (symbol 2944 . 2947) (punctuation 2943 . 2944) (punctuation 2942 . 2943) (symbol 2938 . 2942) (punctuation 2936 . 2937) (symbol 2928 . 2935) (semantic-list 2920 . 2928) (punctuation 2919 . 2920) (punctuation 2914 . 2915) (symbol 2899 . 2914) (CASE 2894 . 2898) (punctuation 2886 . 2887) (BREAK 2881 . 2886) (punctuation 2876 . 2877) (semantic-list 2864 . 2876) (symbol 2852 . 2864) (punctuation 2850 . 2851) (symbol 2842 . 2849) (semantic-list 2833 . 2842) (punctuation 2832 . 2833) (punctuation 2827 . 2828) (semantic-list 2819 . 2827) (SIZEOF 2813 . 2819) (punctuation 2811 . 2812) (symbol 2803 . 2810) (punctuation 2802 . 2803) (punctuation 2797 . 2798) (symbol 2783 . 2797) (CASE 2778 . 2782) (open-paren 2774 . 2775) (close-paren 2772 . 2773) (symbol 2764 . 2772) (open-paren 2763 . 2764) (SWITCH 2756 . 2762) (close-paren 2752 . 2753) (punctuation 2749 . 2750) (symbol 2742 . 2749) (punctuation 2741 . 2742) (RETURN 2734 . 2740) (open-paren 2730 . 2731) (close-paren 2728 . 2729) (symbol 2724 . 2728) (punctuation 2722 . 2723) (punctuation 2721 . 2722) (symbol 2713 . 2720) (punctuation 2711 . 2712) (punctuation 2710 . 2711) (symbol 2705 . 2709) (punctuation 2703 . 2704) (punctuation 2702 . 2703) (symbol 2694 . 2701) (open-paren 2693 . 2694) (IF 2690 . 2692) (punctuation 2685 . 2686) (close-paren 2684 . 2685) (symbol 2681 . 2684) (open-paren 2680 . 2681) (symbol 2667 . 2680) (punctuation 2665 . 2666) (symbol 2660 . 2664) (punctuation 2658 . 2659) (symbol 2646 . 2658) (punctuation 3284 . 3285) (number 3283 . 3284) (RETURN 3276 . 3282) (semantic-list 2774 . 3274) (semantic-list 2763 . 2773) (SWITCH 2756 . 2762) (semantic-list 2730 . 2753) (semantic-list 2693 . 2729) (IF 2690 . 2692) (punctuation 3284 . 3285) (number 3283 . 3284) (RETURN 3276 . 3282) (close-paren 3273 . 3274) (punctuation 3270 . 3271) (BREAK 3265 . 3270) (punctuation 3260 . 3261) (close-paren 3259 . 3260) (number 3258 . 3259) (open-paren 3257 . 3258) (symbol 3249 . 3257) (punctuation 3244 . 3245) (symbol 3230 . 3244) (CASE 3225 . 3229) (punctuation 3217 . 3218) (BREAK 3212 . 3217) (punctuation 3207 . 3208) (close-paren 3206 . 3207) (symbol 3200 . 3206) (open-paren 3199 . 3200) (SIZEOF 3193 . 3199) (punctuation 3191 . 3192) (symbol 3183 . 3190) (punctuation 3182 . 3183) (punctuation 3177 . 3178) (symbol 3173 . 3177) (punctuation 3172 . 3173) (symbol 3169 . 3172) (punctuation 3168 . 3169) (punctuation 3167 . 3168) (symbol 3163 . 3167) (punctuation 3161 . 3162) (symbol 3153 . 3160) (close-paren 3152 . 3153) (punctuation 3151 . 3152) (symbol 3145 . 3151) (open-paren 3144 . 3145) (punctuation 3143 . 3144) (punctuation 3138 . 3139) (symbol 3123 . 3138) (CASE 3118 . 3122) (punctuation 3110 . 3111) (BREAK 3105 . 3110) (punctuation 3100 . 3101) (close-paren 3099 . 3100) (punctuation 3098 . 3099) (CHAR 3094 . 3098) (open-paren 3093 . 3094) (SIZEOF 3087 . 3093) (punctuation 3085 . 3086) (symbol 3077 . 3084) (punctuation 3076 . 3077) (punctuation 3071 . 3072) (symbol 3061 . 3071) (punctuation 3060 . 3061) (symbol 3057 . 3060) (punctuation 3056 . 3057) (punctuation 3055 . 3056) (symbol 3051 . 3055) (punctuation 3049 . 3050) (close-paren 3047 . 3048) (symbol 3040 . 3047) (open-paren 3039 . 3040) (close-paren 3038 . 3039) (punctuation 3037 . 3038) (punctuation 3036 . 3037) (CHAR 3032 . 3036) (open-paren 3031 . 3032) (punctuation 3030 . 3031) (punctuation 3025 . 3026) (symbol 3008 . 3025) (CASE 3003 . 3007) (punctuation 2995 . 2996) (BREAK 2990 . 2995) (punctuation 2985 . 2986) (close-paren 2984 . 2985) (punctuation 2983 . 2984) (CHAR 2979 . 2983) (open-paren 2978 . 2979) (SIZEOF 2972 . 2978) (punctuation 2970 . 2971) (symbol 2962 . 2969) (punctuation 2961 . 2962) (punctuation 2956 . 2957) (symbol 2948 . 2956) (punctuation 2947 . 2948) (symbol 2944 . 2947) (punctuation 2943 . 2944) (punctuation 2942 . 2943) (symbol 2938 . 2942) (punctuation 2936 . 2937) (symbol 2928 . 2935) (close-paren 2927 . 2928) (punctuation 2926 . 2927) (punctuation 2925 . 2926) (CHAR 2921 . 2925) (open-paren 2920 . 2921) (punctuation 2919 . 2920) (punctuation 2914 . 2915) (symbol 2899 . 2914) (CASE 2894 . 2898) (punctuation 2886 . 2887) (BREAK 2881 . 2886) (punctuation 2876 . 2877) (close-paren 2875 . 2876) (symbol 2872 . 2875) (punctuation 2871 . 2872) (punctuation 2870 . 2871) (symbol 2866 . 2870) (punctuation 2865 . 2866) (open-paren 2864 . 2865) (symbol 2852 . 2864) (punctuation 2850 . 2851) (symbol 2842 . 2849) (close-paren 2841 . 2842) (punctuation 2840 . 2841) (symbol 2834 . 2840) (open-paren 2833 . 2834) (punctuation 2832 . 2833) (punctuation 2827 . 2828) (close-paren 2826 . 2827) (symbol 2820 . 2826) (open-paren 2819 . 2820) (SIZEOF 2813 . 2819) (punctuation 2811 . 2812) (symbol 2803 . 2810) (punctuation 2802 . 2803) (punctuation 2797 . 2798) (symbol 2783 . 2797) (CASE 2778 . 2782) (open-paren 2774 . 2775) (close-paren 2772 . 2773) (symbol 2764 . 2772) (open-paren 2763 . 2764) (SWITCH 2756 . 2762) (close-paren 2752 . 2753) (punctuation 2749 . 2750) (symbol 2742 . 2749) (punctuation 2741 . 2742) (RETURN 2734 . 2740) (open-paren 2730 . 2731) (close-paren 2728 . 2729) (symbol 2724 . 2728) (punctuation 2722 . 2723) (punctuation 2721 . 2722) (symbol 2713 . 2720) (punctuation 2711 . 2712) (punctuation 2710 . 2711) (symbol 2705 . 2709) (punctuation 2703 . 2704) (punctuation 2702 . 2703) (symbol 2694 . 2701) (open-paren 2693 . 2694) (IF 2690 . 2692) (punctuation 2685 . 2686) (close-paren 2684 . 2685) (symbol 2681 . 2684) (open-paren 2680 . 2681) (symbol 2667 . 2680) (punctuation 2665 . 2666) (symbol 2660 . 2664) (punctuation 2658 . 2659) (symbol 2646 . 2658))
+      :lexical-table 
+        '(("RTLIB_LOGGER")
+          ("CONFIG_RTLOGGER_BUFFER_SIZE" . ((number "512" 188 . 191)))
+          ("RTLIB")
+          )
+))
+  :file "!home!qadabr!work!agent!src!rtlib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
