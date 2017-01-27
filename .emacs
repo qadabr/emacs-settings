@@ -69,6 +69,8 @@
 (add-to-list 'company-backends 'company-c-headers)
 (add-to-list 'company-backend 'company-irony)
 
+(define-key global-map (kbd "M-z") 'company-complete-common)
+
 (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 (add-hook 'c-mode-common-hook 'irony-mode)
 (add-hook 'c-mode-common-hook 'company-mode)
