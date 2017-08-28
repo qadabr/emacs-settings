@@ -1,4 +1,3 @@
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -9,6 +8,9 @@
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
 			 ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+;; Удаляем лишние пробелы
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Назначение клавиш
 (define-key global-map (kbd "M-j") 'backward-char)
@@ -66,7 +68,6 @@
 ;; Автодополнение
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
-(add-to-list 'company-backends 'company-c-headers)
 (add-to-list 'company-backend 'company-irony)
 
 (define-key global-map (kbd "M-z") 'company-complete-common)
@@ -101,7 +102,6 @@
 
 (require 'semantic/ia)
 (global-semanticdb-minor-mode)
-(global-semantic-highlight-func-mode)
 (global-semantic-decoration-mode)
 (global-semantic-idle-scheduler-mode)
 (global-semantic-idle-completions-mode)
